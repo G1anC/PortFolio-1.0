@@ -157,9 +157,6 @@ html body {
   font-family: "Noto";
   color: rgb(242, 233, 204);
 }
-html body section {
-  border: 1px solid red;
-}
 html body p {
   word-spacing: 5px;
   line-height: 200%;
