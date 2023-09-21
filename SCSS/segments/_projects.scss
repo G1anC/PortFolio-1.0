@@ -1,0 +1,27 @@
+$bg-color : rgb(26, 22, 21); 
+$first-color: #f2e9cc;
+$secondary-color: #e28b34;
+$secondary-font : "steelfish";
+$stylish-font : "Rosie";
+$primary-font : "Noto";
+
+
+#project {
+    color: $first-color;
+    margin-top: 60px;
+    background-color:linear-gradient(to bottom, white, rgba(0, 0, 0, 0));
+    .title {
+        color: $first-color;
+        text-align: start;
+        font-weight: 100;
+        margin-bottom: 100px;
+    }
+    .skills-paragraph {
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 25px;
+    }
+    .projects-wrapper {
+        position: relative;
+    }
+}
