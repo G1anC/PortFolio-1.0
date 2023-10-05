@@ -87,14 +87,14 @@ input {
 
     background-color: transparent;
     border-radius: 10px;
-    border: 1px solid rgb(69, 69, 69);
+    border: 1px solid rgba(135, 170, 172, 0.3);
     text-align:center;
     letter-spacing: 1px;
     font-size: 25px;
     color : $first-color;
     font-family:$details-font;
     transition: all 0.1s;
-    &::placeholder { color:$first-color; opacity: 0.5; }
+    &::placeholder { color:$first-color; opacity: 0.3; }
     &:hover {
         border: 1px solid $first-color;
         // faire le programme ref a hyperplex sur le hover du menu mais faire la meme pour les inpu
@@ -115,7 +115,7 @@ input {
 textarea {
     background-color: transparent;
     border-radius: 10px;
-    border: 1px solid rgb(77, 77, 77);
+    border: 1px solid rgba(135, 170, 172, 0.3);
     resize: none;
     margin-bottom: 10px;
     padding-top: 20px;
@@ -127,7 +127,7 @@ textarea {
     font-family:$details-font;
 
     transition: all 0.1s;
-    &::placeholder { opacity: 0.5;}
+    &::placeholder { color:$first-color; opacity: 0.3; }
     &:hover {
         border: 1px solid $first-color;
     }

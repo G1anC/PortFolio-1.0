@@ -117,7 +117,7 @@ input {
   margin-bottom: 10px;
   background-color: transparent;
   border-radius: 10px;
-  border: 1px solid rgb(69, 69, 69);
+  border: 1px solid rgba(135, 170, 172, 0.3);
   text-align: center;
   letter-spacing: 1px;
   font-size: 25px;
@@ -127,11 +127,11 @@ input {
 }
 input::-moz-placeholder {
   color: rgb(219, 253, 255);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 input::placeholder {
   color: rgb(219, 253, 255);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 input:hover {
   border: 1px solid rgb(219, 253, 255);
@@ -149,7 +149,7 @@ input:focus::placeholder {
 textarea {
   background-color: transparent;
   border-radius: 10px;
-  border: 1px solid rgb(77, 77, 77);
+  border: 1px solid rgba(135, 170, 172, 0.3);
   resize: none;
   margin-bottom: 10px;
   padding-top: 20px;
@@ -161,10 +161,12 @@ textarea {
   transition: all 0.1s;
 }
 textarea::-moz-placeholder {
-  opacity: 0.5;
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
 }
 textarea::placeholder {
-  opacity: 0.5;
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
 }
 textarea:hover {
   border: 1px solid rgb(219, 253, 255);
