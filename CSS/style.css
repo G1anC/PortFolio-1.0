@@ -44,6 +44,12 @@ body #first {
   left: 500px;
   background: linear-gradient(150deg, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
 }
+body #third {
+  background: linear-gradient(to top, rgb(26, 22, 21), rgb(127, 0, 255));
+  position: absolute;
+  top: -1800px;
+  left: -600px;
+}
 
 @keyframes background-pan {
   from {
@@ -58,33 +64,60 @@ body #first {
 }
 .contact-body .contact-wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 30px 20fr;
 }
 .contact-body .form-wrapper {
   display: flex;
   padding-top: 40px;
-  margin-right: 40px;
+  margin-right: 150px;
+  margin-left: 120px;
   height: 95vh;
   flex-direction: column;
-  flex: 1;
 }
 .contact-body .form-wrapper .submit {
   margin-bottom: 0;
   width: 100px;
 }
+.contact-body .form-wrapper #contact-button {
+  border: none;
+}
+.contact-body .form-wrapper #contact-button:hover {
+  animation: background-pan 5s linear infinite;
+  letter-spacing: 4px;
+  font-family: "Rosie";
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
+  background-size: 200%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .medias {
   display: flex;
-  flex: 1;
-  background-color: black;
+  width: 100%;
+  border: 1px red solid;
+  height: 50%;
+  padding-right: -3px;
+  margin-top: 25%;
+  flex-direction: column;
+}
+.medias > i {
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  height: 50%;
 }
 
 input {
   height: 60px;
   margin-bottom: 10px;
-  background-color: rgb(22, 22, 23);
+  background-color: transparent;
   border-radius: 10px;
-  border: 1px solid rgb(22, 22, 23);
+  border: 1px solid rgb(69, 69, 69);
   text-align: center;
   letter-spacing: 1px;
   font-size: 25px;
@@ -101,8 +134,7 @@ input::placeholder {
   opacity: 0.5;
 }
 input:hover {
-  border: 1px solid rgb(73, 73, 73);
-  background: linear-gradient(to right, rgb(26, 22, 21) 40%, rgb(127, 0, 255));
+  border: 1px solid rgb(219, 253, 255);
 }
 input:focus {
   outline: none !important;
@@ -115,9 +147,10 @@ input:focus::placeholder {
 }
 
 textarea {
-  background-color: rgb(22, 22, 23);
+  background-color: transparent;
   border-radius: 10px;
-  border: 1px solid rgb(22, 22, 23);
+  border: 1px solid rgb(77, 77, 77);
+  resize: none;
   margin-bottom: 10px;
   padding-top: 20px;
   letter-spacing: 1px;
@@ -134,8 +167,7 @@ textarea::placeholder {
   opacity: 0.5;
 }
 textarea:hover {
-  border: 1px solid rgb(73, 73, 73);
-  background: linear-gradient(to right, rgb(26, 22, 21) 40%, rgb(127, 0, 255));
+  border: 1px solid rgb(219, 253, 255);
 }
 textarea:focus {
   padding-left: 20px;

@@ -48,4 +48,10 @@ body {
         left: 500px;
         background: linear-gradient(150deg ,$bg-color 20%, rgb(0, 132, 255));
     }
+    #third {
+        background: linear-gradient(to top ,$bg-color, rgb(127, 0, 255));
+        position: absolute;
+        top: -1800px;
+        left: -600px;
+    }
 }
