@@ -1,0 +1,90 @@
+
+
+@font-face { font-family: 'Rosie'; src: url('../../assets/fonts/Rosie.woff2') format('woff2'); }
+@font-face { font-family: 'Croissant'; src: url('../../assets/fonts/Croissant.woff2') format('woff2'); }
+
+$stylish-font : "Rosie";
+$primary-font : "Space Mono", monospace;
+$bg-color : rgb(25, 19, 28); 
+$second--bg-color: rgb(57, 49, 60);
+$first-color: rgb(219, 253, 255);
+$violet:rgb(127, 0, 255);
+$in-between-violet: rgb(0, 42, 255);
+$blue: rgb(17, 199, 245);
+
+
+html {
+    .work {
+        display:flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: $bg-color;
+        .work-main {
+            box-sizing: border-box;
+            flex-grow: 1;
+            article {
+                position: absolute;
+                display:grid;
+                box-sizing: border-box;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: 2fr 1fr;
+                height: 100vh;
+                border: 1px $second--bg-color solid;
+                &[data-status="inactive"] {
+                    transform: translateX(-100%);
+                }
+                .w-section {
+                    height: 100%;
+                }
+                .w-image {
+                    border-bottom: 1px $second--bg-color solid;
+                    border-right: 1px $second--bg-color solid;
+                    background-image: url("../../assets/images/42sh.png");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+                .w-title {
+                    border-right: 1px $second--bg-color solid;
+                    .w-title-wrapper {
+                        height: 100%;
+                        box-sizing: border-box;
+                        position: relative;
+                        display:grid;
+                        grid-template-columns: 3fr 1fr;
+                        grid-template-rows: 1fr;
+                        img {
+                            width: 40%;
+                            height: 40%;
+                        }
+                        .w-title-styler {
+                            font-size: 60px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                
+
+                .w-description {
+                    border-bottom: 1px $second--bg-color solid;
+                    padding: 2rem 4rem;
+                    box-sizing: border-box;
+                    text-align:center;
+                }
+                .arrows {
+                    width: 100%;
+                    height: 100%;
+                    display:flex;
+                    flex-direction: row;
+                    &:first-child {
+                        border-right: 1px $second--bg-color solid;
+                    }
+                    button {
+                        background-color: $bg-color;
+                        width: 50%;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

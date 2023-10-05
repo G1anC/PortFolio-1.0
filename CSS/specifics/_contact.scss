@@ -1,0 +1,113 @@
+$violet:rgb(127, 0, 255);
+$in-between-violet: rgb(0, 42, 255);
+$blue: rgb(17, 199, 245);
+$first-color: rgb(219, 253, 255);
+$details-font : "BitMap";
+
+@keyframes background-pan {
+    from { background-position: 0% center; }
+    to { background-position: -200% center; }
+}
+
+
+
+//______________________________________ CONTACT GENERAL SETTINGS ______________________________________//
+
+
+
+.contact-body  {
+    overflow: hidden;
+    .contact-wrapper {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .form-wrapper {
+        display:flex;
+        padding-top : 40px;
+        margin-right: 40px;
+        height : 95vh;
+        flex-direction: column;
+        flex: 1;
+        .submit {
+            margin-bottom:0;
+            width: 100px;
+        }
+    }    
+}
+
+
+
+//______________________________________ MEDIAS SETTINGS ______________________________________//
+
+
+
+.medias {
+    display: flex;
+    flex: 1;
+    background-color: black;
+}
+
+
+
+//______________________________________ INPUTS SETTINGS ______________________________________//
+
+
+
+input {
+    height: 60px;
+    margin-bottom: 10px; 
+
+    background-color: rgb(22, 22, 23);
+    border-radius: 10px;
+    border: 1px solid rgb(22, 22, 23);
+    text-align:center;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color : $first-color;
+    font-family:$details-font;
+    transition: all 0.1s;
+    &::placeholder { color:$first-color; opacity: 0.5; }
+    &:hover {
+        border: 1px solid rgb(73, 73, 73);
+        background : linear-gradient(to right, $bg-color 40%, $violet)
+        // faire le programme ref a hyperplex sur le hover du menu mais faire la meme pour les inpu
+    }
+    &:focus {
+        outline:none !important;
+        &::placeholder { color: transparent; }
+    }
+}
+
+
+
+//______________________________________ TEXTAERA SETTINGS ______________________________________//
+
+
+
+textarea {
+    background-color: rgb(22, 22, 23);
+    border-radius: 10px;
+    border: 1px solid rgb(22, 22, 23);
+        
+    margin-bottom: 10px;
+    padding-top: 20px;
+    
+    letter-spacing: 1px;
+    text-align:center;
+    font-size: 25px;
+    color : $first-color;
+    font-family:$details-font;
+
+    transition: all 0.1s;
+    &::placeholder { opacity: 0.5;}
+    &:hover {
+        border: 1px solid rgb(73, 73, 73);
+        background : linear-gradient(to right, $bg-color 40%, $violet);
+    }
+    &:focus {
+        padding-left: 20px;
+        text-align: start;
+        outline:none !important;
+        &::placeholder { color: transparent; }
+    }
+}

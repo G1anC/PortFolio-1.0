@@ -1,186 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="SCSS/general.css">
-    <title>*.✧ PørtFølịø ✧.*</title>
+    <title>* PortFolio *</title>
 </head>
-
 
 <body>
 
-
-    <section id="nav-bar--section">
-        <div class="nav-bar">
-            <img src="assets/pfp.jpg"></img>
-            <a href="index.html">My Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <div id="progress"></div>
+    <nav>
+        <div class="nav-wrapper">
+            <a data-value="about-me" class="link cript-js" href="HTML/hero.html">      about-me</a>
+            <a data-value="works"    class="link cript-js" href="HTML/works.html">     works</a>
+            <a data-value="contact"  class="link cript-js" href="HTML/contact.html"> contact</a>
         </div>
-    </section>
+    </nav>
 
-
-<!-- ________________________________________________________________________________________________________________________ -->
-
-
-
-
-    <section id="introduction-section">
-        <div class="title" id="greatest">
-            <span class="orange">no</span>ah stein<span class="orange">iger</span>
-        </div>
-        <!-- Start about me -->
-        <div class="introduction-p">
-                <p>
-                    Hi, welcome to my PortFolio.
-                    I'm a young developer studying at {EPITECH} Strasbourg and i'm glad that you came to visit my Folio ! 
-                    Hope you appreciate my creations and hope even more that you contact me afterwards.
-                    Have a nice tour !
-                </p>
-
-        </div>
-    </section>
-
-
-
-    <!-- ________________________________________________________________________________________________________________________ -->
-
-
-    <section id="about-section">
-        <div id="about">
-            <div class="title" id="about-title">About<span id="blue"> me</span>
-            </div>
-            <p id="about-p">
-                As i said earlier, my name is Noah Giancarlo Steiniger Rubiero.
-                I strive to be the most genuinely open-minded, courageous, happy and kind person i can.
-                <br><br>
-                <span class="bold detail-color">Why ?</span>
-                <br><br>
-                Because my favorite author is Marcus Aurelius, yes... but also because that's what i'm best at !
-                <br>
-                I always try to surpass my limits, because i just love the idea of continuous improvement,
-                exactly the same as the Developer World that keeps growing.
-                That's the reason i prefer small, energetic and adapting workground because i can't stop evolving !
-                <br>
-                I have loads and loads of hobbies such as reading, basket-ball, astronomy, music
-                and of course <bold>coding ! </bold><br><br>
-                <span class="bold detail-color">So let's see what exactly are my strenght and skills, and what i've actually worked on !</span> 
-            </p>
-        </div>
-    </section>
-
-
-    <!-- ________________________________________________________________________________________________________________________ -->
-
-
-    <section id="skills">
-        <div id="skills-bg"></div>
-        <div class="title">span class="orange">ski</span>lls</div>
-        <div id="skills-paragraph">
-            <p> I mostly work on Linux but i'm pretty confortable on Windows.
-                <br>
-                I love to learn new langages but these are the ones i'm truly confident with :
-                C, C++, css (sass and tailwind), html, javascript (react.js, node.js & three.js).
-                <br>
-                I also encourage myself to develop good habits and skills on applications and websites like :
-                Vscode, Git, Powerpoint, Bash or Canva.
-                <br>
-                Now let's see what i've done over the course of my developer life !! 
-            </p>
-        </div>
-    </section>
-    <!-- <div id="test-bar"></div> -->
-
-    <!-- ________________________________________________________________________________________________________________________ -->
-
-
-    <section id="projects">
-        <div id="projects-bg"></div>
-        <div class="title">
-            my pro<span id="orange">jects</span>
-        </div>
-        <p>
-            Bla bla bla these are my projects.
-        </p>
-        <div id="projects-container">
-
-            <div class="project" id="ptits-bonheurs">
-                Les P'tits Bonheurs 
-            </div>
-
-            <div class="project" id="evelyne-creations">
-                Evelyne Creations
-            </div>
-
-            <div class="project" id="RPG">
-                RPG
-            </div>
-
-            <div class="project" id="42sh">
-                42sh
-            </div>
-
-            <div class="project" id="lemin">
-                Lem-in
-            </div>
-
-            <div class="project" id="in-coming">
-                In-coming...
+    <main>
+        <div class="title-wrapper">
+            <div class="title" id="greatest">
+                <span class="magic">no</span><span class="to-grip">ah</span> stein<span class="magic">iger</span>
             </div>
         </div>
-    </section>
-
-
-    <!-- ________________________________________________________________________________________________________________________ -->
-
-
-    <section id="contact">
-        <div class="contact-wrapper">
-            Faire une section pour écrire un mail
-        </div>
-    </section>
-
-    <section id="decoration">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <div class="big-ahh-circle">
-            <div id="sec"></div>
+        <div class="intro-p">
+            Press <span class="magic">Escape</span> to continue !
         </div>
 
-        <div class="star small l-s">✧</div>
-        <div class="star medium l-m">✧</div>
-        <div class="star big l-b">✧</div>
+        <div class="big-ahh-circle" id="first">
+        </div>
 
-        <div class="star small r-s">✧</div>
-        <div class="star medium r-m">✧</div>
-        <div class="star big r-b">✧</div>
+        <div class="big-ahh-circle" id="sec">
+        </div>
+        <!-- <div class="center-bar"></div> -->
+        <script src="JS/LetterChanger.js"></script>
+        <script src="JS/navTrigger.js"></script>
+    </main>
 
-        <div class="big-ahh-circle"><div id="first"></div></div>
-
-        <div class="bar" id="mini-1" style="z-index:2"></div>
-        <div class="bar" id="b1"style="z-index:2"></div>
-        <div class="bar" id="transition-bar1"style="z-index:2"></div>
-        <div class="bar" id="b2"style="z-index:2"></div>
-        <div class="bar" id="mini-2"style="z-index:2"></div>
-
-        <div class="bar" id="transition-bar2"style="z-index:2"></div>
-        <div class="bar" id="b3"style="z-index:2"></div>
-        <div class="bar" id="mini-3"style="z-index:2"></div>
-        <div class="bar" id="mini-4"style="z-index:2"></div>
-        <div class="bar" id="b4"style="z-index:2"></div>
-        <div class="bar" id="transition-bar3"style="z-index:2"></div>
-
-        <div class="star giant">✧</div>
-    </section>
-    <script src="js/scrollbar.js"></script>
 </body>
 </html>
