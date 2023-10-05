@@ -20,35 +20,105 @@ $stylish-font : "Rosie";
     overflow: hidden;
     .contact-wrapper {
         display:grid;
-        grid-template-columns: 30px 20fr;
-    }
-    .form-wrapper {
-        display:flex;
-        padding-top : 40px;
-        margin-right: 150px;
-        margin-left: 120px;
-        height : 95vh;
-        flex-direction: column; 
-        .submit {
-            margin-bottom:0;
-            width: 100px;
-        }
-        #contact-button {
-            border: none;
-            &:hover {
-                animation: background-pan 5s linear infinite;
-                letter-spacing: 4px;
-                font-family: $stylish-font;
-                font-size: 50px;
-                font-weight: bold;
-
-                background: linear-gradient(to right, $blue, $violet, $blue);
-                background-size: 200%;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+        grid-template-columns: 200px 20fr;
+        
+        .form-wrapper {
+            display:flex;
+            padding-top : 40px;
+            margin-right: 120px;
+            margin-left: 50px;
+            height : 95vh;
+            flex-direction: column; 
+            .submit {
+                margin-bottom:0;
+                width: 100px;
             }
-        }
-    }    
+            #contact-button {
+                border: none;
+                margin-left: 300px;
+                margin-right: 300px;    
+                &:hover {
+                    animation: background-pan 5s linear infinite;
+                    letter-spacing: 4px;
+                    font-family: $stylish-font;
+                    font-size: 50px;
+                    font-weight: bold;
+                    border: none !important;
+                    background: linear-gradient(to right, $blue, $violet, $blue);
+                    background-size: 200%;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                &:focus {
+                    outline:none !important;
+                    height: 60px;
+                    &::placeholder { color: transparent; }
+                    border: none !important;
+                }
+            }
+            #fullname {
+                border-start-start-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            textarea {
+                background-color: transparent;
+                border-radius: 5px;
+                border: 1px solid rgba(135, 170, 172, 0.3);
+                resize: none;
+                margin-bottom: 10px;
+                padding-top: 20px;
+                
+                letter-spacing: 1px;
+                text-align:center;
+                font-size: 25px;
+                color : $first-color;
+                font-family:$details-font;
+                border-end-end-radius: 20px;
+                border-bottom-left-radius: 20px;
+                transition: all 0.1s;
+                &::placeholder { color:$first-color; opacity: 0.3; }
+                &:hover {
+                    &::placeholder { opacity: 1; }
+                    border: 1px solid $first-color !important;
+                }
+                &:focus {
+                    padding-left: 20px;
+                    text-align: start;
+                    outline:none !important;
+                    &::placeholder { color: transparent; }
+                    border: 2px rgb(127, 0, 255) solid !important;
+                }
+            }
+            input {
+                height: 60px;
+                margin-bottom: 10px; 
+
+                background-color: transparent;
+                border-radius: 5px;
+                
+
+                border: 1px solid rgba(135, 170, 172, 0.3);
+                text-align:center;
+                letter-spacing: 1px;
+                font-size: 25px;
+                color : $first-color;
+                font-family:$details-font;
+                transition: all 0.1s;
+                &::placeholder { color:$first-color; opacity: 0.3; }
+                &:hover {
+                    &::placeholder { opacity: 1; }
+                    border: 1px solid $first-color !important;
+                    // faire le programme ref a hyperplex sur le hover du menu mais faire la meme pour les inpu
+                }
+                &:focus {
+                    outline:none !important;
+                    height: 70px;
+                    &::placeholder { color: transparent; }
+                    border: 2px rgb(127, 0, 255) solid !important;
+                }
+            }
+        }    
+    }
 }
 
 
@@ -57,84 +127,25 @@ $stylish-font : "Rosie";
 
 
 
-.medias {
+.medias-wrapper {
     display: flex;
-    width: 100%;
-    border: 1px red solid;  
-    height: 50%;
-    padding-right: -3px;
-    margin-top: 25%;
+    position: relative; 
     flex-direction: column;
-    & > i {
-        flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    .medias {
+        display:flex;
+        flex-direction: column;
+        height: 70%;
         width: 100%;
-        text-align: center;
-        align-items: center;
-        justify-items: center;
-        height: 50%;
+        & > i {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            height: 25%;
+        }
     }
-}
-
-
-
-//______________________________________ INPUTS SETTINGS ______________________________________//
-
-
-
-input {
-    height: 60px;
-    margin-bottom: 10px; 
-
-    background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid rgba(135, 170, 172, 0.3);
-    text-align:center;
-    letter-spacing: 1px;
-    font-size: 25px;
-    color : $first-color;
-    font-family:$details-font;
-    transition: all 0.1s;
-    &::placeholder { color:$first-color; opacity: 0.3; }
-    &:hover {
-        border: 1px solid $first-color;
-        // faire le programme ref a hyperplex sur le hover du menu mais faire la meme pour les inpu
-    }
-    &:focus {
-        outline:none !important;
-        &::placeholder { color: transparent; }
-    }
-
-}
-
-
-
-//______________________________________ TEXTAERA SETTINGS ______________________________________//
-
-
-
-textarea {
-    background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid rgba(135, 170, 172, 0.3);
-    resize: none;
-    margin-bottom: 10px;
-    padding-top: 20px;
     
-    letter-spacing: 1px;
-    text-align:center;
-    font-size: 25px;
-    color : $first-color;
-    font-family:$details-font;
-
-    transition: all 0.1s;
-    &::placeholder { color:$first-color; opacity: 0.3; }
-    &:hover {
-        border: 1px solid $first-color;
-    }
-    &:focus {
-        padding-left: 20px;
-        text-align: start;
-        outline:none !important;
-        &::placeholder { color: transparent; }
-    }
 }

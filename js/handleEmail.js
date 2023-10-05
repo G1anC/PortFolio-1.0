@@ -1,34 +1,38 @@
 
 const handleEmail = event => {
+    
+    let fn = document.getElementById("fullname");
+    let e = document.getElementById("email");
+    let m = document.getElementById("message");
+
+    fn.style.borderColor = "rgba(135, 170, 172, 0.3)";
+    e.style.borderColor = "rgba(135, 170, 172, 0.3)";
+    m.style.borderColor = "rgba(135, 170, 172, 0.3)";
 
     if (event.key && event.key !== "Enter") {
         return;
     }
-    const fullName = document.querySelector(".fullName");
-    let fN_text = fullName.value;
-    if (!fN_text) {
-        fullName.placeholder = "You need to write your name";
+    let fnText = document.querySelector(".fullName").value;
+    if (!fnText) {
+        fn.style.borderColor = "red";
     }
 
-    const email = document.querySelector(".email");
-    let e_text = email.value;
-    if (!e_text) {
-        email.placeholder = "You need to write your email adress";
+
+    let eText = document.querySelector(".email").value;
+    if (!eText) {
+        e.style.borderColor = "red";
     }
     
-    const message = document.querySelector(".message");
-    let m_Text = message.value;
-    if (!m_Text) {
-        message.placeholder = "You need to write me a message";
+    let mText = document.querySelector(".message").value;
+    if (!mText) {
+        m.style.borderColor = "red";
     }
 
 
-    if (!m_Text || !fN_text || !e_text) {
+    if (!mText || !fnText || !eText) {
         return;
     }
 
-
-    console.log("wtf");
 
     // Email.send({
     //     Host: "smtp.gmail.com",

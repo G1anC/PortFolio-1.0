@@ -64,91 +64,56 @@ body #third {
 }
 .contact-body .contact-wrapper {
   display: grid;
-  grid-template-columns: 30px 20fr;
+  grid-template-columns: 200px 20fr;
 }
-.contact-body .form-wrapper {
+.contact-body .contact-wrapper .form-wrapper {
   display: flex;
   padding-top: 40px;
-  margin-right: 150px;
-  margin-left: 120px;
+  margin-right: 120px;
+  margin-left: 50px;
   height: 95vh;
   flex-direction: column;
 }
-.contact-body .form-wrapper .submit {
+.contact-body .contact-wrapper .form-wrapper .submit {
   margin-bottom: 0;
   width: 100px;
 }
-.contact-body .form-wrapper #contact-button {
+.contact-body .contact-wrapper .form-wrapper #contact-button {
   border: none;
+  margin-left: 300px;
+  margin-right: 300px;
 }
-.contact-body .form-wrapper #contact-button:hover {
+.contact-body .contact-wrapper .form-wrapper #contact-button:hover {
   animation: background-pan 5s linear infinite;
   letter-spacing: 4px;
   font-family: "Rosie";
   font-size: 50px;
   font-weight: bold;
+  border: none !important;
   background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
   background-size: 200%;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.medias {
-  display: flex;
-  width: 100%;
-  border: 1px red solid;
-  height: 50%;
-  padding-right: -3px;
-  margin-top: 25%;
-  flex-direction: column;
-}
-.medias > i {
-  flex-grow: 1;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-  height: 50%;
-}
-
-input {
-  height: 60px;
-  margin-bottom: 10px;
-  background-color: transparent;
-  border-radius: 10px;
-  border: 1px solid rgba(135, 170, 172, 0.3);
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 25px;
-  color: rgb(219, 253, 255);
-  font-family: "BitMap";
-  transition: all 0.1s;
-}
-input::-moz-placeholder {
-  color: rgb(219, 253, 255);
-  opacity: 0.3;
-}
-input::placeholder {
-  color: rgb(219, 253, 255);
-  opacity: 0.3;
-}
-input:hover {
-  border: 1px solid rgb(219, 253, 255);
-}
-input:focus {
+.contact-body .contact-wrapper .form-wrapper #contact-button:focus {
   outline: none !important;
+  height: 60px;
+  border: none !important;
 }
-input:focus::-moz-placeholder {
+.contact-body .contact-wrapper .form-wrapper #contact-button:focus::-moz-placeholder {
   color: transparent;
 }
-input:focus::placeholder {
+.contact-body .contact-wrapper .form-wrapper #contact-button:focus::placeholder {
   color: transparent;
 }
-
-textarea {
+.contact-body .contact-wrapper .form-wrapper #fullname {
+  border-start-start-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.contact-body .contact-wrapper .form-wrapper textarea {
   background-color: transparent;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgba(135, 170, 172, 0.3);
   resize: none;
   margin-bottom: 10px;
@@ -158,29 +123,101 @@ textarea {
   font-size: 25px;
   color: rgb(219, 253, 255);
   font-family: "BitMap";
+  border-end-end-radius: 20px;
+  border-bottom-left-radius: 20px;
   transition: all 0.1s;
 }
-textarea::-moz-placeholder {
+.contact-body .contact-wrapper .form-wrapper textarea::-moz-placeholder {
   color: rgb(219, 253, 255);
   opacity: 0.3;
 }
-textarea::placeholder {
+.contact-body .contact-wrapper .form-wrapper textarea::placeholder {
   color: rgb(219, 253, 255);
   opacity: 0.3;
 }
-textarea:hover {
-  border: 1px solid rgb(219, 253, 255);
+.contact-body .contact-wrapper .form-wrapper textarea:hover {
+  border: 1px solid rgb(219, 253, 255) !important;
 }
-textarea:focus {
+.contact-body .contact-wrapper .form-wrapper textarea:hover::-moz-placeholder {
+  opacity: 1;
+}
+.contact-body .contact-wrapper .form-wrapper textarea:hover::placeholder {
+  opacity: 1;
+}
+.contact-body .contact-wrapper .form-wrapper textarea:focus {
   padding-left: 20px;
   text-align: start;
   outline: none !important;
+  border: 2px rgb(127, 0, 255) solid !important;
 }
-textarea:focus::-moz-placeholder {
+.contact-body .contact-wrapper .form-wrapper textarea:focus::-moz-placeholder {
   color: transparent;
 }
-textarea:focus::placeholder {
+.contact-body .contact-wrapper .form-wrapper textarea:focus::placeholder {
   color: transparent;
+}
+.contact-body .contact-wrapper .form-wrapper input {
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(135, 170, 172, 0.3);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: rgb(219, 253, 255);
+  font-family: "BitMap";
+  transition: all 0.1s;
+}
+.contact-body .contact-wrapper .form-wrapper input::-moz-placeholder {
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
+}
+.contact-body .contact-wrapper .form-wrapper input::placeholder {
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
+}
+.contact-body .contact-wrapper .form-wrapper input:hover {
+  border: 1px solid rgb(219, 253, 255) !important;
+}
+.contact-body .contact-wrapper .form-wrapper input:hover::-moz-placeholder {
+  opacity: 1;
+}
+.contact-body .contact-wrapper .form-wrapper input:hover::placeholder {
+  opacity: 1;
+}
+.contact-body .contact-wrapper .form-wrapper input:focus {
+  outline: none !important;
+  height: 70px;
+  border: 2px rgb(127, 0, 255) solid !important;
+}
+.contact-body .contact-wrapper .form-wrapper input:focus::-moz-placeholder {
+  color: transparent;
+}
+.contact-body .contact-wrapper .form-wrapper input:focus::placeholder {
+  color: transparent;
+}
+
+.medias-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.medias-wrapper .medias {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+.medias-wrapper .medias > i {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
 }
 
 @font-face {

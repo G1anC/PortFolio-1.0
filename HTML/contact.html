@@ -18,11 +18,15 @@
 
         <div class="contact-wrapper">
 
-            <div class="medias">
-                    <i class="fa-brands fa-instagram">yo</i>
-                    <i class="fa-brands fa-github">yo</i>
-                    <i class="fa-brands fa-linkedin">yo</i>
-                    <i class="fa-brands fa-gmail">yo</i>
+            <div class="medias-wrapper">
+                <div class="medias">
+                    <a href="https://www.instagram.com/noah.stngr/"><i class="fa-brands fa-instagram">yo</i></a>
+                    <a href="https://github.com/G1anC"><i class="fa-brands fa-github">yo</i></a>
+                    <a href="https://www.linkedin.com/in/noah-steiniger-a08298263/"><i class="fa-brands fa-linkedin">yo</i></a>
+                    <input type="button" value="Gmail" onclick="
+                        copyEmailToClipBoard();                    
+                    ">
+                </div>
             </div>
 
             <div class="form-wrapper" >
@@ -30,6 +34,7 @@
                     <input
                         data-value="fullname"
                         type="text"
+                        id="fullname"
                         placeholder="fullname"
                         class="cript-js fullName"
                         required
@@ -46,7 +51,7 @@
                     <textarea
                         data-value="message"
                         name="gotcha"
-                        id=""
+                        id="message"
                         cols="30"
                         rows="10"
                         placeholder="message"
