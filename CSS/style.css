@@ -66,6 +66,64 @@ body #third {
   display: grid;
   grid-template-columns: 200px 20fr;
 }
+.contact-body .contact-wrapper .medias-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias > * {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  padding-left: 15px;
+  transition: 0.2s;
+  border: none;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias > *:hover {
+  transform: scale(1.2);
+}
+.contact-body .contact-wrapper .medias-wrapper .medias .gmail-button {
+  display: flex;
+  width: 80px;
+  margin-bottom: 0;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(135, 170, 172, 0.3);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: "BitMap";
+  transition: all 0.1s;
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias .gmail-button:hover {
+  border: 1px solid rgb(219, 253, 255) !important;
+  opacity: 1;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias .gmail-button:focus {
+  outline: none !important;
+  height: 70px;
+  border: 2px rgb(127, 0, 255) solid !important;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias a img {
+  width: 50px;
+  height: 50px;
+}
+.contact-body .contact-wrapper .medias-wrapper .medias a .linkedin {
+  transform: scale(1.5);
+}
 .contact-body .contact-wrapper .form-wrapper {
   display: flex;
   padding-top: 40px;
@@ -196,28 +254,6 @@ body #third {
 }
 .contact-body .contact-wrapper .form-wrapper input:focus::placeholder {
   color: transparent;
-}
-
-.medias-wrapper {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-.medias-wrapper .medias {
-  display: flex;
-  flex-direction: column;
-  height: 70%;
-  width: 100%;
-}
-.medias-wrapper .medias > i {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 25%;
 }
 
 @font-face {
