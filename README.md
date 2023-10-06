@@ -1,4 +1,4 @@
-# My PortFolio
+ <h1 style="color:rgb(127, 0, 255);">My PortFolio</h1>
 
 This is my personal portfolio that i did as a training as my first Web Development project.
 
