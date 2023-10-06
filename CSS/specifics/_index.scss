@@ -19,6 +19,7 @@ body {
         .intro-p {
             position: absolute;
             display: flex;
+            bottom: -10px;
             & > * {
                 width: 100%;
                 margin: 40px;

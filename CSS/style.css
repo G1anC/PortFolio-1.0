@@ -18,6 +18,7 @@ body main .title-wrapper #greatest {
 body main .intro-p {
   position: absolute;
   display: flex;
+  bottom: -10px;
   width: 100vw;
   font-family: "BitMap";
 }
