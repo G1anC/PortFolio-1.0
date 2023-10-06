@@ -25,7 +25,8 @@ body main .intro-p {
 body main .intro-p > * {
   width: 100%;
   margin: 40px;
-  font-size: 35px;
+  font-size: 45px;
+  font-style: italic;
 }
 body main .intro-p .intro-to-PF {
   text-align: start;
