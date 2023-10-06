@@ -2,23 +2,12 @@
 
 This is my personal portfolio that i did as a training as my first Web Development project.
 
-#### Menu Page :
+## Specifications :
+
+This is the page that you'll get on the incoming of the site !
 ![image](https://github.com/G1anC/PortFolio/assets/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
 
-#### Navigation Page :
-
-#### Contact Page :
-
-*incoming...*
-
-#### Hero Page :
-
-*incoming...*
-
-#### Works Page :
-
-*incoming...*
-
+The crypted hover effect was made with javascript and was inspired by Hyperplexed on his CodePen repository !
 
 ## How to use it
 
