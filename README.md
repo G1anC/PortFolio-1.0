@@ -2,6 +2,7 @@
 
 This is my personal portfolio that i did as a training as my first Web Development project.
 
+### Menu Page :
 ![image](https://github.com/G1anC/PortFolio/assets/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
 
 ### How to use it
