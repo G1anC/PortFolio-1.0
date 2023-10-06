@@ -1,4 +1,4 @@
- <h1 style="color:rgb(127, 0, 255);">My PortFolio</h1>
+ <h1 style="color:blue;">My PortFolio</h1>
 
 This is my personal portfolio that i did as a training as my first Web Development project.
 
@@ -25,11 +25,5 @@ To see how it looks like, go to https://noah-steiniger.com (*isn't initialized y
 Or clone the repository and run it on your computer with Live Server on VSCode.
 
 ***Feel free to do whatever you want with it***
-
-<style>
-H1{color:rgb(127, 0, 255) !important;}
-H2{color:DarkOrange !important;}
-p{color:Black !important;}
-</style>
 
 
