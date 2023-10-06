@@ -26,4 +26,10 @@ Or clone the repository and run it on your computer with Live Server on VSCode.
 
 ***Feel free to do whatever you want with it***
 
+<style>
+H1{color:rgb(127, 0, 255) !important;}
+H2{color:DarkOrange !important;}
+p{color:Black !important;}
+</style>
+
 
