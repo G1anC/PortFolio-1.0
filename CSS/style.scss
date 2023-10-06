@@ -40,12 +40,12 @@ html {
         -webkit-font-smoothing:antialiased;
         background: $bg-color;
         scroll-behavior: smooth;
-        font-size: 20px;
-        font-style: italic;
+        font-size: 25px;
+        // font-style: italic;
         width: 100vw;
         margin-top: 0px;
         margin-left: 0;
-        font-family: $primary-font;
+        font-family: $details-font;
         .magic {
             animation: background-pan 3s linear infinite;
             white-space: nowrap;

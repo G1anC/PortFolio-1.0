@@ -9,10 +9,10 @@ $details-font : "BitMap";
     margin-left:0;
     padding-top:0;
     padding-left:0;
-    overflow-y: hidden;
+    overflow-y: scroll;
     .pres-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr;
         gap: 20px;
         .pres-paragraph {
@@ -23,8 +23,8 @@ $details-font : "BitMap";
         .pres-image {
             overflow: hidden;
             img {
+                aspect-ratio: 1;
                 width: 100%;
-                height: 100%;
             }
         }
     }

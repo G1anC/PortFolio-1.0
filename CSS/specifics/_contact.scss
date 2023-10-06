@@ -52,8 +52,9 @@ $stylish-font : "Rosie";
                 &:focus {
                     outline:none !important;
                     height: 60px;
-                    &::placeholder { color: transparent; }
                     border: none !important;
+
+                    &::placeholder { color: transparent; }
                 }
             }
             #fullname {
@@ -78,15 +79,17 @@ $stylish-font : "Rosie";
                 transition: all 0.1s;
                 &::placeholder { color:$first-color; opacity: 0.3; }
                 &:hover {
-                    &::placeholder { opacity: 1; }
                     border: 1px solid $first-color !important;
+
+                    &::placeholder { opacity: 1; }
                 }
                 &:focus {
                     padding-left: 20px;
                     text-align: start;
                     outline:none !important;
-                    &::placeholder { color: transparent; }
                     border: 2px rgb(127, 0, 255) solid !important;
+
+                    &::placeholder { color: transparent; }
                 }
             }
             input {
@@ -106,15 +109,15 @@ $stylish-font : "Rosie";
                 transition: all 0.1s;
                 &::placeholder { color:$first-color; opacity: 0.3; }
                 &:hover {
-                    &::placeholder { opacity: 1; }
                     border: 1px solid $first-color !important;
+                    &::placeholder { opacity: 1; }
                     // faire le programme ref a hyperplex sur le hover du menu mais faire la meme pour les inpu
                 }
                 &:focus {
                     outline:none !important;
                     height: 70px;
-                    &::placeholder { color: transparent; }
                     border: 2px rgb(127, 0, 255) solid !important;
+                    &::placeholder { color: transparent; }
                 }
             }
         }    

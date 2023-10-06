@@ -231,11 +231,11 @@ body #third {
   margin-left: 0;
   padding-top: 0;
   padding-left: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 .hero-body .pres-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
   gap: 20px;
 }
@@ -248,8 +248,8 @@ body #third {
   overflow: hidden;
 }
 .hero-body .pres-wrapper .pres-image img {
+  aspect-ratio: 1;
   width: 100%;
-  height: 100%;
 }
 
 @font-face {
@@ -370,12 +370,11 @@ html body {
   -webkit-font-smoothing: antialiased;
   background: rgb(26, 22, 21);
   scroll-behavior: smooth;
-  font-size: 20px;
-  font-style: italic;
+  font-size: 25px;
   width: 100vw;
   margin-top: 0px;
   margin-left: 0;
-  font-family: "Space Mono", monospace;
+  font-family: "BitMap";
   color: rgb(219, 253, 255);
 }
 html body .magic {
