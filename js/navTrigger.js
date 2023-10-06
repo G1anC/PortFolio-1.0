@@ -13,4 +13,12 @@ document.addEventListener('keydown', (event) => {
         nav.style.display = 'block' :
         nav.style.display = 'none';
     }
-  });
+});
+
+const fadeInNextPage = event => {
+  document.getElementById("fadeInEffect").style.opacity = "1";
+}
+
+Array.from(document.getElementsByClassName("link")).forEach(element => {
+  element.addEventListener("click", fadeInNextPage);
+});

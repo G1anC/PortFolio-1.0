@@ -15,12 +15,23 @@ body {
                 font-size: 200px;
             }
         }
+        
         .intro-p {
             position: absolute;
-            font-size: 50px;
-            bottom: 40px;
-            left: 40px;
+            display: flex;
+            & > * {
+                width: 100%;
+                margin: 40px;
+                font-size: 35px;
+            }
+            width: 100vw;
             font-family : "BitMap";
+            .intro-to-PF {
+                text-align: start;
+            }
+            .intro-explanations {
+                text-align: end;
+            }
         }
     }
 

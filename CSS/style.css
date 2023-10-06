@@ -17,10 +17,20 @@ body main .title-wrapper #greatest {
 }
 body main .intro-p {
   position: absolute;
-  font-size: 50px;
-  bottom: 40px;
-  left: 40px;
+  display: flex;
+  width: 100vw;
   font-family: "BitMap";
+}
+body main .intro-p > * {
+  width: 100%;
+  margin: 40px;
+  font-size: 35px;
+}
+body main .intro-p .intro-to-PF {
+  text-align: start;
+}
+body main .intro-p .intro-explanations {
+  text-align: end;
 }
 body .big-ahh-circle {
   background: linear-gradient(310deg, rgb(26, 22, 21) 15%, rgb(127, 0, 255));
@@ -436,6 +446,13 @@ html body .details {
   font-family: "BitMap";
   font-size: 90px;
 }
+html body #fadeInNextPage {
+  position: absolute;
+  width: 1000%;
+  height: 1000%;
+  opacity: 0;
+  background-color: rgb(26, 22, 21);
+}
 
 nav {
   position: absolute;
@@ -482,11 +499,6 @@ nav .nav-wrapper a:hover {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-nav .nav-wrapper a:focus {
-  z-index: 1000;
-  background: black;
-  font-size: 1000px;
 }
 
 .center-bar {

@@ -64,12 +64,17 @@ html {
             .to-grip {
                 margin-left: -10px;
             }
-            
-            
         }
         .details {
             font-family: $details-font; 
             font-size: 90px;
+        }
+        #fadeInNextPage {
+            position: absolute;
+            width: 1000%;
+            height: 1000%;
+            opacity: 0;
+            background-color: $bg-color;
         }
     }
 }
@@ -129,11 +134,6 @@ nav {
                 background-size: 200%;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-            }
-            &:focus {
-                z-index: 1000;
-                background: black;
-                font-size: 1000px;
             }
         }
     }
