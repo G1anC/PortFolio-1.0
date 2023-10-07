@@ -92,8 +92,8 @@ nav {
     display: none;
     width: 100vw;
     height: 100vh;
-    background-color: rgba( 0, 0, 0, 0.6);
-    backdrop-filter: blur(20px);
+    background-color: rgba( 0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
     .nav-wrapper {
         display: grid;
         overflow: visible;

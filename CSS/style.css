@@ -453,9 +453,9 @@ nav {
   display: none;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 nav .nav-wrapper {
   display: grid;
