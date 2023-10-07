@@ -21,10 +21,6 @@ $stylish-font : "Rosie";
     .contact-wrapper {
         display:grid;
         grid-template-columns: 200px 20fr;
-
-
-
-
         .medias-wrapper {
             display: flex;
             position: relative; 
@@ -42,7 +38,7 @@ $stylish-font : "Rosie";
                     align-items: center;
                     justify-content: center;
                     height: 25%;
-                    padding-left: 15px;
+                    padding-left: 20px;
                     transition: 0.2s;
                     border: none;
                     &:hover {
@@ -61,7 +57,7 @@ $stylish-font : "Rosie";
                     letter-spacing: 1px;
                     font-size: 25px;
                     font-family:$details-font;
-                    transition: all 0.1s;
+                    transition:  all 0.2s;
                     color: $first-color;
                     opacity: 0.3;
                     &:hover { border: 1px solid $first-color !important; opacity: 1; }
@@ -71,7 +67,6 @@ $stylish-font : "Rosie";
                         border: 2px rgb(127, 0, 255) solid !important;
                     }
                 }
-
                 a {
                     img { width: 50px; height: 50px; }
                     .linkedin { transform: scale(1.5); }
@@ -81,26 +76,31 @@ $stylish-font : "Rosie";
 
 
         .form-wrapper {
+            z-index: 3;
             display:flex;
-            padding-top : 40px;
+            padding-top : 20px;
             margin-right: 120px;
             margin-left: 50px;
-            height : 95vh;
+            height : 100vh;
             flex-direction: column; 
             .submit {
                 margin-bottom:0;
-                width: 100px;
+                width: 140px;
             }
             #contact-button {
                 border: none;
-                margin-left: 300px;
-                margin-right: 300px;    
+                margin-left: 280px;
+                margin-right: 280px;
+                transition: all 0.2s;
                 &:hover {
                     animation: background-pan 5s linear infinite;
                     letter-spacing: 4px;
                     font-family: $stylish-font;
-                    font-size: 50px;
-                    font-weight: bold;
+                    font-size: 80px;
+                    height: 40%;
+                    margin-left: 200px;
+                    margin-right:200px;
+                    margin-top: -30px;
                     border: none !important;
                     background: linear-gradient(to right, $blue, $violet, $blue);
                     background-size: 200%;
@@ -124,7 +124,7 @@ $stylish-font : "Rosie";
                 border-radius: 5px;
                 border: 1px solid rgba(135, 170, 172, 0.3);
                 resize: none;
-                margin-bottom: 10px;
+                margin-bottom: 7px;
                 padding-top: 20px;
                 
                 letter-spacing: 1px;
@@ -134,11 +134,10 @@ $stylish-font : "Rosie";
                 font-family:$details-font;
                 border-end-end-radius: 20px;
                 border-bottom-left-radius: 20px;
-                transition: all 0.1s;
+                transition:  all 0.2s;
                 &::placeholder { color:$first-color; opacity: 0.3; }
                 &:hover {
                     border: 1px solid $first-color !important;
-
                     &::placeholder { opacity: 1; }
                 }
                 &:focus {
@@ -146,13 +145,12 @@ $stylish-font : "Rosie";
                     text-align: start;
                     outline:none !important;
                     border: 2px rgb(127, 0, 255) solid !important;
-
                     &::placeholder { color: transparent; }
                 }
             }
             input {
                 height: 60px;
-                margin-bottom: 10px; 
+                margin-bottom: 7px; 
 
                 background-color: transparent;
                 border-radius: 5px;
@@ -164,7 +162,7 @@ $stylish-font : "Rosie";
                 font-size: 25px;
                 color : $first-color;
                 font-family:$details-font;
-                transition: all 0.1s;
+                transition:  all 0.2s;
                 &::placeholder { color:$first-color; opacity: 0.3; }
                 &:hover {
                     border: 1px solid $first-color !important;

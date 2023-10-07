@@ -2,6 +2,7 @@
 @import "specifics/contact";
 @import "specifics/hero";
 @import "specifics/works";
+@import "specifics/home";
 
 @font-face { font-family: 'Rosie'; src: url('../assets/fonts/Rosie.woff2') format('woff2'); }
 @font-face { font-family: 'Croissant'; src: url('../assets/fonts/Croissant.woff2') format('woff2'); }
@@ -118,9 +119,10 @@ nav {
         }
         a {
             font-size: 70px;
+
             font-family: $details-font;
             font-style: normal;
-            color: white;
+            color: $first-color;
             align-self: center;
             text-decoration: none;
             transition: all 0.2s;
@@ -129,7 +131,6 @@ nav {
                 letter-spacing: 4px;
                 font-family: $stylish-font;
                 font-size: 90px;
-                font-weight: 900;
                 background: linear-gradient(to right, $blue, $violet, $blue);
                 background-size: 200%;
                 background-clip: text;
@@ -152,4 +153,35 @@ nav {
     position: absolute;
     top: 0;
     left: 50%;
+}
+
+.big-ahh-circle {
+    background: linear-gradient(310deg ,$bg-color 15%, rgb(127, 0, 255));
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -3;
+    width: 150rem;
+    height: 150rem;
+    
+}
+#sec {
+    top: -1750px;
+    left: -1200px;
+}
+#first {
+    width: 75rem;
+    height: 75rem;
+    top: 150px;
+    left: 500px;
+    background: linear-gradient(150deg ,$bg-color 20%, rgb(0, 132, 255));
+}
+#third {
+    background: linear-gradient(to top ,$bg-color, rgb(127, 0, 255));
+    top: -1800px;
+    left: -600px;
+}
+#home-circle {
+    top: -200px;
+    background: linear-gradient(to bottom right  , $bg-color 20%, $violet);
 }

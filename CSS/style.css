@@ -1,6 +1,9 @@
 body {
   overflow: hidden;
 }
+body nav .nav-wrapper .link:hover {
+  font-size: 150px;
+}
 body main {
   top: 0;
   left: 0;
@@ -8,6 +11,8 @@ body main {
   width: 100vw;
 }
 body main .title-wrapper {
+  height: 100%;
+  width: 100%;
   padding-top: 50px;
   text-align: center;
   line-height: 190px;
@@ -28,39 +33,8 @@ body main .intro-p > * {
   font-size: 45px;
   font-style: italic;
 }
-body main .intro-p .intro-to-PF {
-  text-align: start;
-}
 body main .intro-p .intro-explanations {
-  text-align: end;
-}
-body .big-ahh-circle {
-  background: linear-gradient(310deg, rgb(26, 22, 21) 15%, rgb(127, 0, 255));
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  z-index: -3;
-  width: 150rem;
-  height: 150rem;
-}
-body #sec {
-  position: absolute;
-  top: -1750px;
-  left: -1200px;
-}
-body #first {
-  width: 75rem;
-  height: 75rem;
-  top: 150px;
-  position: absolute;
-  left: 500px;
-  background: linear-gradient(150deg, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
-}
-body #third {
-  background: linear-gradient(to top, rgb(26, 22, 21), rgb(127, 0, 255));
-  position: absolute;
-  top: -1800px;
-  left: -600px;
+  text-align: stqrt;
 }
 
 @keyframes background-pan {
@@ -97,7 +71,7 @@ body #third {
   align-items: center;
   justify-content: center;
   height: 25%;
-  padding-left: 15px;
+  padding-left: 20px;
   transition: 0.2s;
   border: none;
 }
@@ -116,7 +90,7 @@ body #third {
   letter-spacing: 1px;
   font-size: 25px;
   font-family: "BitMap";
-  transition: all 0.1s;
+  transition: all 0.2s;
   color: rgb(219, 253, 255);
   opacity: 0.3;
 }
@@ -137,28 +111,33 @@ body #third {
   transform: scale(1.5);
 }
 .contact-body .contact-wrapper .form-wrapper {
+  z-index: 3;
   display: flex;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-right: 120px;
   margin-left: 50px;
-  height: 95vh;
+  height: 100vh;
   flex-direction: column;
 }
 .contact-body .contact-wrapper .form-wrapper .submit {
   margin-bottom: 0;
-  width: 100px;
+  width: 140px;
 }
 .contact-body .contact-wrapper .form-wrapper #contact-button {
   border: none;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 280px;
+  margin-right: 280px;
+  transition: all 0.2s;
 }
 .contact-body .contact-wrapper .form-wrapper #contact-button:hover {
   animation: background-pan 5s linear infinite;
   letter-spacing: 4px;
   font-family: "Rosie";
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 80px;
+  height: 40%;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: -30px;
   border: none !important;
   background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
   background-size: 200%;
@@ -186,7 +165,7 @@ body #third {
   border-radius: 5px;
   border: 1px solid rgba(135, 170, 172, 0.3);
   resize: none;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding-top: 20px;
   letter-spacing: 1px;
   text-align: center;
@@ -195,7 +174,7 @@ body #third {
   font-family: "BitMap";
   border-end-end-radius: 20px;
   border-bottom-left-radius: 20px;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 .contact-body .contact-wrapper .form-wrapper textarea::-moz-placeholder {
   color: rgb(219, 253, 255);
@@ -228,7 +207,7 @@ body #third {
 }
 .contact-body .contact-wrapper .form-wrapper input {
   height: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid rgba(135, 170, 172, 0.3);
@@ -237,7 +216,7 @@ body #third {
   font-size: 25px;
   color: rgb(219, 253, 255);
   font-family: "BitMap";
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 .contact-body .contact-wrapper .form-wrapper input::-moz-placeholder {
   color: rgb(219, 253, 255);
@@ -281,23 +260,22 @@ body #third {
   padding-left: 0;
   overflow-y: scroll;
 }
-.hero-body .pres-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
-}
 .hero-body .pres-wrapper .pres-paragraph {
   padding: 20px;
   font-size: 30px;
   font-family: "BitMap";
 }
-.hero-body .pres-wrapper .pres-image {
-  overflow: hidden;
-}
-.hero-body .pres-wrapper .pres-image img {
+.hero-body .pres-image {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 90vw;
   aspect-ratio: 1;
+}
+.hero-body .pres-image img {
+  opacity: 0.2;
   width: 100%;
+  height: 100%;
 }
 
 @font-face {
@@ -378,6 +356,19 @@ html .work .work-main article .arrows button {
   background-color: rgb(25, 19, 28);
   width: 50%;
   border: none;
+}
+
+.home-body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.home-body > * {
+  height: 100%;
+}
+.home-body .home-main {
+  position: absolute;
+  border-right: 1px solid rgb(60, 40, 60);
 }
 
 @font-face {
@@ -485,7 +476,7 @@ nav .nav-wrapper a {
   font-size: 70px;
   font-family: "BitMap";
   font-style: normal;
-  color: white;
+  color: rgb(219, 253, 255);
   align-self: center;
   text-decoration: none;
   transition: all 0.2s;
@@ -495,7 +486,6 @@ nav .nav-wrapper a:hover {
   letter-spacing: 4px;
   font-family: "Rosie";
   font-size: 90px;
-  font-weight: 900;
   background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
   background-size: 200%;
   -webkit-background-clip: text;
@@ -510,4 +500,38 @@ nav .nav-wrapper a:hover {
   position: absolute;
   top: 0;
   left: 50%;
+}
+
+.big-ahh-circle {
+  background: linear-gradient(310deg, rgb(26, 22, 21) 15%, rgb(127, 0, 255));
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -3;
+  width: 150rem;
+  height: 150rem;
+}
+
+#sec {
+  top: -1750px;
+  left: -1200px;
+}
+
+#first {
+  width: 75rem;
+  height: 75rem;
+  top: 150px;
+  left: 500px;
+  background: linear-gradient(150deg, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
+}
+
+#third {
+  background: linear-gradient(to top, rgb(26, 22, 21), rgb(127, 0, 255));
+  top: -1800px;
+  left: -600px;
+}
+
+#home-circle {
+  top: -200px;
+  background: linear-gradient(to bottom right, rgb(26, 22, 21) 20%, rgb(127, 0, 255));
 }/*# sourceMappingURL=style.css.map */

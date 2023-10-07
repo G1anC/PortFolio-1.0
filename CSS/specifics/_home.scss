@@ -1,0 +1,12 @@
+.home-body {
+    overflow: hidden;
+    width:100vw;
+    height: 100vh;
+    & > * {
+        height: 100%;
+    }
+    .home-main {
+        position:absolute;
+        border-right: 1px solid rgb(60, 40, 60);
+    }
+}
