@@ -5,33 +5,25 @@ const handleEmail = event => {
     let e = document.getElementById("email");
     let m = document.getElementById("message");
 
+    // reset color if the value !== undefined
     fn.style.borderColor = "rgba(135, 170, 172, 0.3)";
     e.style.borderColor = "rgba(135, 170, 172, 0.3)";
     m.style.borderColor = "rgba(135, 170, 172, 0.3)";
 
-    if (event.key && event.key !== "Enter") {
-        return;
-    }
+    if (event.key && event.key !== "Enter") { return; }
+
     let fnText = document.querySelector(".fullName").value;
-    if (!fnText) {
-        fn.style.borderColor = "red";
-    }
+    if (!fnText) { fn.style.borderColor = "red"; }
 
 
     let eText = document.querySelector(".email").value;
-    if (!eText) {
-        e.style.borderColor = "red";
-    }
+    if (!eText) { e.style.borderColor = "red"; }
     
     let mText = document.querySelector(".message").value;
-    if (!mText) {
-        m.style.borderColor = "red";
-    }
+    if (!mText) { m.style.borderColor = "red"; }
 
 
-    if (!mText || !fnText || !eText) {
-        return;
-    }
+    if (!mText || !fnText || !eText) { return; }
 
 
     // Email.send({
@@ -45,7 +37,7 @@ const handleEmail = event => {
     // }).then(
     //     message => alert("mail sent successfully")  
     // );
-    message.innerText = "";
+    m.innerText = "";
 };
 
 document.addEventListener('keydown', handleEmail);

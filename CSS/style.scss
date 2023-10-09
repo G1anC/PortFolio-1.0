@@ -54,7 +54,7 @@ html {
             background-size: 200%;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            padding-right: 1px;
+            padding-right: 5px;
         }
         color: $first-color;
         .title {
@@ -93,7 +93,7 @@ nav {
     width: 100vw;
     height: 100vh;
     background-color: rgba( 0, 0, 0, 0.5);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     .nav-wrapper {
         display: grid;
         overflow: visible;
@@ -140,6 +140,16 @@ nav {
     }
 }
 
+.explaining {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 40px;
+    font-style: italic; 
+    width: 100vw;
+    font-family : "BitMap";
+}
+
 
 
 //______________________________________ CENTER LANDMARK ______________________________________//
@@ -183,5 +193,5 @@ nav {
 }
 #home-circle {
     top: -200px;
-    background: linear-gradient(to bottom right  , $bg-color 20%, $violet);
+    background: linear-gradient(to bottom right  , rgba(0, 0, 0, 0) 20%, $violet);
 }

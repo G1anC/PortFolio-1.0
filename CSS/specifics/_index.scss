@@ -1,5 +1,6 @@
 
 $bg-color : rgb(26, 22, 21); 
+
 body {
     overflow: hidden;
     nav { .nav-wrapper { .link { &:hover { font-size: 150px; } } } }
@@ -18,25 +19,5 @@ body {
                 font-size: 200px;
             }
         }
-        
-        .intro-p {
-            position: absolute;
-            display: flex;
-            bottom: -10px;
-            & > * {
-                width: 100%;
-                margin: 40px;
-                font-size: 45px;
-                font-style: italic; 
-            }
-            width: 100vw;
-            font-family : "BitMap";
-            .intro-explanations {
-                text-align: stqrt;
-            }
-        }
     }
-
-    
-    
 }
