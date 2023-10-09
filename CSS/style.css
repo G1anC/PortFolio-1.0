@@ -301,6 +301,16 @@ body main .title-wrapper #greatest {
   grid-template-rows: 1fr;
   transition: all 0.2s;
 }
+.where-from .family .workers p .white {
+  color: rgb(219, 253, 255);
+  font-size: 35px;
+}
+.where-from .family .workers img {
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+}
 .where-from .family .workers:hover {
   transition: all 0.2s;
   color: rgb(219, 253, 255);
@@ -308,15 +318,11 @@ body main .title-wrapper #greatest {
 }
 .where-from .family .workers:hover .white {
   animation: background-pan 3s linear infinite;
-  white-space: nowrap;
   background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
   background-size: 200%;
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.where-from .family .workers:hover img {
-  border-color: rgb(219, 253, 255);
 }
 .where-from .family .mom {
   margin-bottom: 15px;
@@ -333,16 +339,13 @@ body main .title-wrapper #greatest {
 .where-from .family .dad p {
   text-align: end;
   padding-left: 80px;
-}
-.where-from .family .dad p .white {
-  color: rgb(219, 253, 255);
-  font-size: 35px;
+  padding-right: 30px;
 }
 .where-from .family .dad img {
-  padding: 0;
-  border: 1px solid rgba(146, 153, 197, 0.5);
+  padding: 20px;
   border-radius: 10px;
-  transform: scale(1.1);
+  width: 400px;
+  height: 400px;
 }
 
 @font-face {
@@ -630,4 +633,16 @@ nav .nav-wrapper a:hover {
 #home-circle {
   top: -200px;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 20%, rgb(127, 0, 255));
+}
+
+#hero-circle {
+  top: -1000px;
+  left: -200px;
+  background: linear-gradient(to right top, rgb(26, 22, 21) 20%, rgb(127, 0, 255));
+}
+
+#hero-circle1 {
+  top: 1000px;
+  left: -1300px;
+  background: linear-gradient(to left bottom, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
 }/*# sourceMappingURL=style.css.map */

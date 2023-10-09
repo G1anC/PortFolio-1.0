@@ -67,19 +67,26 @@ $white: rgb(219, 253, 255);
             border: 1px solid rgba(146, 153, 197, 0.5);
             grid-template-rows: 1fr;
             transition: all 0.2s;
+            p {
+                .white { color: $white; font-size: 35px; }
+               
+            }
+            img {
+                padding : 20px;
+                border-radius: 10px;
+                width: 400px;
+                height: 400px;
+            }
             &:hover {
                 transition: all 0.2s;
                 .white {
                     animation: background-pan 3s linear infinite;
-                    white-space: nowrap;
                     background: linear-gradient(to right, $blue, $violet, $blue);
                     background-size: 200%;
                     background-clip: text;
                     -webkit-text-fill-color: transparent; 
                 }
-                img {
-                    border-color: $white;
-                }
+                
                 color: $white;
                 border-color: $white;
             }
@@ -97,18 +104,15 @@ $white: rgb(219, 253, 255);
             border-bottom-right-radius: 30px;
             border-bottom-left-radius: 30px;
             grid-template-columns: 1fr 2fr;
-
-
             p {
-                .white { color: $white; font-size: 35px; }
-                text-align: end;
-                padding-left: 80px;
-            }
+                text-align: end; 
+                padding-left: 80px; 
+                padding-right: 30px; }
             img {
-                padding: 0;
-                border: 1px solid rgba(146, 153, 197, 0.5);
+                padding : 20px;
                 border-radius: 10px;
-                transform: scale(1.1);
+                width: 400px;
+                height: 400px;
             }
         }
     }

@@ -195,3 +195,15 @@ nav {
     top: -200px;
     background: linear-gradient(to bottom right  , rgba(0, 0, 0, 0) 20%, $violet);
 }
+
+#hero-circle {
+    top: -1000px;
+    left: -200px;
+    background: linear-gradient(to right top ,$bg-color 20%, $violet);
+}
+
+#hero-circle1 {
+    top: 1000px;
+    left: -1300px;
+    background: linear-gradient(to left bottom ,$bg-color 20%, rgb(0, 132, 255));
+}
