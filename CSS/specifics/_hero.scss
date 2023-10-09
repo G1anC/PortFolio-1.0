@@ -17,7 +17,7 @@ $details-font : "BitMap";
     & > *:not(.nav-wrapper) {
         margin-bottom : 50px;
     }
-    & > *:not(.nav-wrapper, .pres-wrapper) {
+    & > *:not(.nav-wrapper, nav, .pres-wrapper) {
         font-size: 25px;
         padding-left: 80px;
         padding-right: 80px;

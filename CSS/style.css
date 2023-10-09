@@ -253,7 +253,7 @@ body main .title-wrapper #greatest {
 .hero-body > *:not(.nav-wrapper) {
   margin-bottom: 50px;
 }
-.hero-body > *:not(.nav-wrapper, .pres-wrapper) {
+.hero-body > *:not(.nav-wrapper, nav, .pres-wrapper) {
   font-size: 25px;
   padding-left: 80px;
   padding-right: 80px;
