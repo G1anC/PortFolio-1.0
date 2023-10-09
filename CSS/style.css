@@ -289,17 +289,19 @@ body main .title-wrapper #greatest {
   margin-bottom: 30px;
 }
 .where-from .family .hard-workers {
+  margin: 0px 200px 80px 200px;
   text-align: center;
 }
 .where-from .family .workers {
   display: grid;
-  padding: 32px 20px 30px 40px;
-  border-radius: 10px;
+  padding: 0px 20px 0px 40px;
   line-height: 30px;
-  margin: 30px 50px 30px 30px;
-  border: 1px solid rgba(146, 153, 197, 0.5);
+  margin: 10px 50px 10px 30px;
   grid-template-rows: 1fr;
   transition: all 0.2s;
+}
+.where-from .family .workers p {
+  margin-top: 60px;
 }
 .where-from .family .workers p .white {
   color: rgb(219, 253, 255);
@@ -314,7 +316,9 @@ body main .title-wrapper #greatest {
 .where-from .family .workers:hover {
   transition: all 0.2s;
   color: rgb(219, 253, 255);
-  border-color: rgb(219, 253, 255);
+}
+.where-from .family .workers:hover img {
+  opacity: 1;
 }
 .where-from .family .workers:hover .white {
   animation: background-pan 3s linear infinite;
@@ -325,15 +329,16 @@ body main .title-wrapper #greatest {
   -webkit-text-fill-color: transparent;
 }
 .where-from .family .mom {
-  margin-bottom: 15px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
   grid-template-columns: 1.5fr 1fr;
 }
+.where-from .family .mom p {
+  margin-right: 80px;
+}
 .where-from .family .dad {
-  margin-top: 15px;
+  padding-top: 30px;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  border: none;
   grid-template-columns: 1fr 2fr;
 }
 .where-from .family .dad p {
