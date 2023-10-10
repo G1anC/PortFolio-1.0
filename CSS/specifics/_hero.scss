@@ -37,7 +37,6 @@ $white: rgb(219, 253, 255);
         font-size: 30px;
         color: $white;
         text-align: center;
-
         padding-top: 80px;
         padding-bottom: 30px;
     }
@@ -74,9 +73,6 @@ $white: rgb(219, 253, 255);
             &:hover {
                 transition: all 0.2s;
                 color: $white;
-                img {
-                    opacity: 1;
-                }
                 .white {
                     animation: background-pan 3s linear infinite;
                     background: linear-gradient(to right, $blue, $violet, $blue);
@@ -89,9 +85,7 @@ $white: rgb(219, 253, 255);
 
         .mom {
             grid-template-columns: 1.5fr 1fr;
-            p {
-                margin-right: 80px;
-            }
+            p { margin-right: 80px; }
         }
 
         .dad {
