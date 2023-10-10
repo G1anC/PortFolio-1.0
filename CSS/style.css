@@ -384,7 +384,7 @@ article {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
-  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-in;
 }
 article .article {
   height: 100%;
@@ -427,6 +427,10 @@ article:nth-child(3) > .image {
 article:nth-child(4) > .image {
   background-image: url("https://images.unsplash.com/photo-1660766877755-4cac24f6cf21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
 }
+article:nth-child(5) > .image {
+  background-position: initial;
+  background-image: url("../../assets/images/Gospers_glider_gun.gif");
+}
 article .nav {
   border-top: 1px solid rgba(255, 203, 255, 0.215);
   border-left: 1px solid rgba(255, 203, 255, 0.215);
@@ -468,7 +472,7 @@ article .title-section {
   border-top: 1px solid rgba(255, 203, 255, 0.215);
 }
 article .title-section .title-wrapper-work {
-  width: 100px;
+  width: 100%;
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -476,13 +480,11 @@ article .title-section .title-wrapper-work .title {
   font-size: 60px;
 }
 article .title-section i {
-  width: 210px;
+  border-left: 1px solid rgba(255, 203, 255, 0.215);
+  width: 300px;
   height: 100%;
   color: rgba(255, 255, 255, 0.75);
   font-size: 4rem;
-}
-article .title-section i:hover {
-  background: linear-gradient(to left, rgba(234, 174, 252, 0.04), transparent);
 }
 
 .home-body {

@@ -51,7 +51,7 @@ const letterChanger = event => {
     if(i >= e.dataset.value.length) { 
       clearInterval(interval);
     }
-    i += 1/2;
+    i += 1/3;
   }, 30);
 }
 
