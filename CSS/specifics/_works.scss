@@ -27,6 +27,7 @@ html {
     #work-body {
         display:flex;
         flex-direction: column;
+        scroll-behavior: smooth;
         overflow: hidden;
         height: 100vh;
         margin: 0px;
@@ -43,8 +44,8 @@ html {
 }
 
 article {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -52,10 +53,11 @@ article {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     transition: transform 400ms ease-in;
-
+    border-bottom: 1px solid $border-color;
     .article {
         height: 100%;
         display: flex;
+        
     }
 
     &[data-status="inactive"] { transform: translateX(-100%); transition: none; }
@@ -109,8 +111,6 @@ article {
             }
         } 
     }
-
-
     .description {
         flex-direction: column;
         justify-content: center;
@@ -125,10 +125,6 @@ article {
             a:hover { text-decoration: underline; }
         }
     }
-
-
-
-
     .title-section {
         align-items: center; 
         justify-content: space-between;
@@ -149,13 +145,16 @@ article {
             transition: all 0.1s;
             &:hover {
                 background: linear-gradient(to left, rgba(234, 174, 252, 0.04) 40%, transparent);
-                .plus-bar { animation: plus-color 0.1s; background-color: $first-color;}
+                .plus-bar {
+                    animation: plus-color 0.1s;
+                    background-color: $first-color;
+                }
             }
             .plus-bar {
                 position: absolute;
                 height: 50px;
                 width: 5px;
-                background-color: $border-color;
+                background-color: rgb(80, 61, 108);
             }
             .vertical {
                 top: 36%;
@@ -168,8 +167,11 @@ article {
                 top: 28%;;
                 left: 50%;
             }
-        }
-        
+        } 
+    }
+
+    .rest {
+        display: none;
     }
 }
   

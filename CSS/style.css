@@ -1,4 +1,5 @@
 body {
+  scroll-behavior: smooth;
   overflow: hidden;
 }
 body nav .nav-wrapper .link:hover {
@@ -19,6 +20,9 @@ body main .title-wrapper {
 }
 body main .title-wrapper #greatest {
   font-size: 200px;
+}
+body main .intro-p {
+  font-size: 60px;
 }
 
 @keyframes background-pan {
@@ -369,6 +373,7 @@ body main .title-wrapper #greatest {
 html #work-body {
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
   overflow: hidden;
   height: 100vh;
   margin: 0px;
@@ -384,8 +389,8 @@ html #work-body main {
 }
 
 article {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -393,6 +398,7 @@ article {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr 1fr;
   transition: transform 400ms ease-in;
+  border-bottom: 1px solid rgba(219, 253, 255, 0.184);
 }
 article .article {
   height: 100%;
@@ -519,7 +525,7 @@ article .title-section .plus .plus-bar {
   position: absolute;
   height: 50px;
   width: 5px;
-  background-color: rgba(219, 253, 255, 0.184);
+  background-color: rgb(80, 61, 108);
 }
 article .title-section .plus .vertical {
   top: 36%;
@@ -531,6 +537,9 @@ article .title-section .plus .horizontal {
   transform: rotate(90deg);
   top: 28%;
   left: 50%;
+}
+article .rest {
+  display: none;
 }
 
 .home-body {
@@ -691,7 +700,7 @@ nav .nav-wrapper a:hover {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  font-size: 40px;
+  font-size: 50px;
   font-style: italic;
   width: 100vw;
   font-family: "BitMap";

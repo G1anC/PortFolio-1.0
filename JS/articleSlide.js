@@ -1,12 +1,16 @@
 
 let activeIndex = 0;
-
 const slides = document.getElementsByTagName("article");
 
 function handleLeftClick() {
-  const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
-  
-  const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
+
+  var element = document.getElementById("work-body");
+  element.scrollIntoView({behavior: "smooth"});
+  element.style.overflowY = "hidden";
+
+
+  const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1, 
+        currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
         nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
         
   currentSlide.dataset.status = "after";
@@ -17,13 +21,20 @@ function handleLeftClick() {
     nextSlide.dataset.status = "active";
     activeIndex = nextIndex;
   });
+
 }
 
 function handleRightClick() {
+
+  var element = document.getElementById("work-body");
+  element.scrollIntoView({behavior: "smooth"});
+  element.style.overflowY = "hidden";
+
+  document.getElementById("work-body").style.overflowY = "hidden";
   const nextIndex = activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
   
   const currentSlide = document.querySelector(`[data-index="${activeIndex}"]`),
-        nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
+  nextSlide = document.querySelector(`[data-index="${nextIndex}"]`);
   
   currentSlide.dataset.status = "before";
   

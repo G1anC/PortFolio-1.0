@@ -2,6 +2,7 @@
 $bg-color : rgb(26, 22, 21); 
 
 body {
+    scroll-behavior: smooth;
     overflow: hidden;
     nav { .nav-wrapper { .link { &:hover { font-size: 150px; } } } }
     main {
@@ -18,6 +19,9 @@ body {
             #greatest {
                 font-size: 200px;
             }
+        }
+        .intro-p {
+            font-size: 60px;
         }
     }
 }
