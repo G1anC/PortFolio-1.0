@@ -358,6 +358,14 @@ body main .title-wrapper #greatest {
   font-family: "Croissant";
   src: url("../../assets/fonts/Croissant.woff2") format("woff2");
 }
+@keyframes plus-color {
+  from {
+    background-color: rgba(219, 253, 255, 0.184);
+  }
+  to {
+    background-color: rgb(219, 253, 255);
+  }
+}
 html #work-body {
   display: flex;
   flex-direction: column;
@@ -432,15 +440,14 @@ article:nth-child(5) > .image {
   background-image: url("../../assets/images/Gospers_glider_gun.gif");
 }
 article .nav {
-  border-top: 1px solid rgba(255, 203, 255, 0.215);
-  border-left: 1px solid rgba(255, 203, 255, 0.215);
+  border-top: 1px solid rgba(219, 253, 255, 0.184);
+  border-left: 1px solid rgba(219, 253, 255, 0.184);
 }
 article .nav .nav-button {
   background-color: transparent;
   flex-grow: 1;
   border: none;
   outline: none;
-  color: rgba(255, 255, 255, 0.75);
   font-size: 3rem;
   cursor: pointer;
   transition: background-color 0.2s ease-out;
@@ -448,8 +455,21 @@ article .nav .nav-button {
 article .nav .nav-button:hover {
   background-color: rgba(234, 174, 252, 0.04);
 }
+article .nav .nav-button:hover svg {
+  fill: rgb(219, 253, 255);
+}
 article .nav .nav-button:nth-child(2) {
-  border-left: 1px solid rgba(255, 203, 255, 0.215);
+  border-left: 1px solid rgba(219, 253, 255, 0.184);
+}
+article .nav .nav-button svg {
+  fill: rgba(219, 253, 255, 0.184);
+  margin-top: 10px;
+  height: "60px";
+  width: "60px";
+  transition: all 0.2s;
+}
+article .nav .nav-button svg:hover {
+  fill: rgb(219, 253, 255);
 }
 article .description {
   flex-direction: column;
@@ -457,7 +477,7 @@ article .description {
   padding: 30px 50px;
   text-align: center;
   line-height: 40px;
-  border-left: 1px solid rgba(255, 203, 255, 0.215);
+  border-left: 1px solid rgba(219, 253, 255, 0.184);
   color: rgb(146, 153, 197);
 }
 article .description p {
@@ -469,7 +489,7 @@ article .description p a:hover {
 article .title-section {
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgba(255, 203, 255, 0.215);
+  border-top: 1px solid rgba(219, 253, 255, 0.184);
 }
 article .title-section .title-wrapper-work {
   width: 100%;
@@ -477,14 +497,40 @@ article .title-section .title-wrapper-work {
   margin-right: 30px;
 }
 article .title-section .title-wrapper-work .title {
-  font-size: 60px;
+  font-size: 70px;
 }
-article .title-section i {
-  border-left: 1px solid rgba(255, 203, 255, 0.215);
-  width: 300px;
+article .title-section .plus {
+  position: relative;
   height: 100%;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 4rem;
+  width: 280px;
+  transition: 0.2s all;
+  background: transparent;
+  border: none;
+  transition: all 0.1s;
+}
+article .title-section .plus:hover {
+  background: linear-gradient(to left, rgba(234, 174, 252, 0.04) 40%, transparent);
+}
+article .title-section .plus:hover .plus-bar {
+  animation: plus-color 0.1s;
+  background-color: rgb(219, 253, 255);
+}
+article .title-section .plus .plus-bar {
+  position: absolute;
+  height: 50px;
+  width: 5px;
+  background-color: rgba(219, 253, 255, 0.184);
+}
+article .title-section .plus .vertical {
+  top: 36%;
+  left: 49%;
+}
+article .title-section .plus .horizontal {
+  position: absolute;
+  height: 80px;
+  transform: rotate(90deg);
+  top: 28%;
+  left: 50%;
 }
 
 .home-body {

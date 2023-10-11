@@ -51,8 +51,8 @@ const letterChanger = event => {
     if(i >= e.dataset.value.length) { 
       clearInterval(interval);
     }
-    i += 1/3;
-  }, 30);
+    i += 1/2;
+  }, 20);
 }
 
 Array.from(document.getElementsByClassName("cript-js")).forEach(e => {
