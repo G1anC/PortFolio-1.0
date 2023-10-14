@@ -16,7 +16,7 @@ function handleLeftClick() {
     currentSlide.dataset.status = "after";
     nextSlide.dataset.status = "becoming-active-from-before";  
     
-    //document.getElementById(`rest-${require(findArticleIndex())}`).style.display = "hidden";
+    //document.getElementById(`rest-${findArticleIndex()}`).style.display = "hidden";
 
     setTimeout(() => {
       nextSlide.dataset.status = "active";
@@ -39,7 +39,7 @@ function handleRightClick() {
   currentSlide.dataset.status = "before";
   nextSlide.dataset.status = "becoming-active-from-after";
 
-  //document.getElementById(`rest-${require(findArticleIndex())}`).style.display = "hidden";
+  //document.getElementById(`rest-${findArticleIndex()}`).style.display = "hidden";
 
   setTimeout(() => {
     nextSlide.dataset.status = "active";
@@ -51,5 +51,5 @@ document.addEventListener("keydown", event => {
     if (event.key === "ArrowLeft")
       handleLeftClick();
     if (event.key === "ArrowRight")
-      handleRightClick();
+    handleRightClick();
 });
