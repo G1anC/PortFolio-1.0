@@ -545,6 +545,7 @@ article .starting-article-wrapper .title-section .plus .horizontal {
 }
 article .rest {
   margin: 100px;
+  z-index: 4;
 }
 article .rest p {
   color: rgb(219, 253, 255);
@@ -619,19 +620,19 @@ html body {
   top: 0;
   left: 0;
   -webkit-font-smoothing: antialiased;
-  background: rgb(26, 22, 21);
+  background: #1a1615;
   scroll-behavior: smooth;
   font-size: 25px;
   width: 100vw;
   margin-top: 0px;
   margin-left: 0;
   font-family: "BitMap";
-  color: rgb(219, 253, 255);
+  color: #dbfdff;
 }
 html body .magic {
   animation: background-pan 3s linear infinite;
   white-space: nowrap;
-  background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
+  background: linear-gradient(to right, #11c7f5, #7f00ff, #11c7f5);
   background-size: 200%;
   -webkit-background-clip: text;
           background-clip: text;
@@ -656,7 +657,7 @@ html body #fadeInNextPage {
   width: 1000%;
   height: 1000%;
   opacity: 0;
-  background-color: rgb(26, 22, 21);
+  background-color: #1a1615;
 }
 
 nav {
@@ -681,14 +682,14 @@ nav .nav-wrapper .nav-bar {
   width: 80%;
   height: 1px;
   animation: background-pan 5s linear infinite;
-  background: linear-gradient(to right, rgb(17, 199, 245), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(127, 0, 255), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(17, 199, 245));
+  background: linear-gradient(to right, #11c7f5, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #7f00ff, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #11c7f5);
   background-size: 200%;
 }
 nav .nav-wrapper a {
   font-size: 70px;
   font-family: "BitMap";
   font-style: normal;
-  color: rgb(219, 253, 255);
+  color: #dbfdff;
   align-self: center;
   text-decoration: none;
   transition: all 0.2s;
@@ -698,7 +699,7 @@ nav .nav-wrapper a:hover {
   letter-spacing: 4px;
   font-family: "Rosie";
   font-size: 90px;
-  background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
+  background: linear-gradient(to right, #11c7f5, #7f00ff, #11c7f5);
   background-size: 200%;
   -webkit-background-clip: text;
           background-clip: text;
@@ -725,7 +726,7 @@ nav .nav-wrapper a:hover {
 }
 
 .big-ahh-circle {
-  background: linear-gradient(310deg, rgb(26, 22, 21) 15%, rgb(127, 0, 255));
+  background: linear-gradient(310deg, #1a1615 15%, rgb(127, 0, 255));
   border-radius: 50%;
   overflow: hidden;
   position: absolute;
@@ -744,34 +745,34 @@ nav .nav-wrapper a:hover {
   height: 75rem;
   top: 150px;
   left: 500px;
-  background: linear-gradient(150deg, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
+  background: linear-gradient(150deg, #1a1615 20%, rgb(0, 132, 255));
 }
 
 #third {
-  background: linear-gradient(to top, rgb(26, 22, 21), rgb(127, 0, 255));
+  background: linear-gradient(to top, #1a1615, rgb(127, 0, 255));
   top: -1800px;
   left: -600px;
 }
 
 #home-circle {
   top: -200px;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 20%, rgb(127, 0, 255));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 20%, #7f00ff);
 }
 
 #hero-circle {
   top: -1000px;
   left: -200px;
-  background: linear-gradient(to right top, rgb(26, 22, 21) 20%, rgb(127, 0, 255));
+  background: linear-gradient(to right top, #1a1615 20%, #7f00ff);
 }
 
 #hero-circle1 {
   top: 1000px;
   left: -1300px;
-  background: linear-gradient(to left bottom, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
+  background: linear-gradient(to left bottom, #1a1615 20%, rgb(0, 132, 255));
 }
 
 #work-circle {
   top: -300px;
   left: -300px;
-  background: linear-gradient(to right bottom, rgb(26, 22, 21) 20%, rgb(127, 0, 255));
+  background: linear-gradient(to right bottom, #1a1615 20%, #7f00ff);
 }/*# sourceMappingURL=style.css.map */
