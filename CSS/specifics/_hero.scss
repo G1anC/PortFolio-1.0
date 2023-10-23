@@ -3,10 +3,24 @@
 
 $details-font : "BitMap";
 $white: rgb(219, 253, 255);
+$border-color: rgba(219, 253, 255, 0.184);
 
 @keyframes background-pan {
     from { background-position: 0% center; }
     to { background-position: -200% center; }
+}
+
+.segment {
+    width: 100vw;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red solid 1px;
+    overflow: hidden;
+    & > * {
+        border: 1px solid $border-color;
+    }
 }
 
 .hero-body {
@@ -15,101 +29,30 @@ $white: rgb(219, 253, 255);
     left:0;
     color : rgb(146, 153, 197);
     overflow-y: scroll;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr ;
-    .where-from, .family, .qualifications, .in-the-future {
-        margin-bottom: 300px;
-    }
-
-    & > *:not(.nav-wrapper, nav, .presentation, .where-from ) {
-        font-size: 25px;
-        padding-right: 50px;
-        line-height: 40px;
-    }
 }
 
 .presentation {
-    width: 100%;
     #intro {
         word-spacing: 3px;
         font-family: $details-font;
         font-size: 30px;
         color: $white;
         text-align: center;
-        padding-top: 80px;
-        padding-bottom: 30px;
     }
 }
 
+
+
+.workers {
+    img {
+        width: 640px;
+        height: 640px;
+        object-fit: cover;
+    }
+}
 
 .where-from {
-    #name {
-        font-size: 30px;
-        padding-bottom: 60px;
-        color: $white;
-        #though { padding-left: 20px; }
-    }
-    .family {
-        & > * { margin-bottom: 30px; }
-        .hard-workers {
-            margin : 0px 200px 80px 200px;
-            text-align:center;
-        }
-        .workers {
-            display: grid;
-            padding : 0px 20px 0px 40px;
-            line-height: 30px;
-            margin: 10px 50px 10px 30px;
-            grid-template-rows: 1fr;
-            transition: all 0.2s;
-            p { margin-top : 60px; .white { color: $white; font-size: 35px; } }
-            img {
-                padding : 20px;
-                border-radius: 10px;
-                width: 400px;
-                height: 400px;
-            }
-            &:hover {
-                transition: all 0.2s;
-                color: $white;
-                .white {
-                    animation: background-pan 3s linear infinite;
-                    background: linear-gradient(to right, $blue, $violet, $blue);
-                    background-size: 200%;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent; 
-                }
-            }
-        }
-
-        .mom {
-            grid-template-columns: 1.5fr 1fr;
-            p { margin-right: 80px; }
-        }
-
-        .dad {
-            padding-top: 30px;
-            border-bottom-right-radius: 30px;
-            border-bottom-left-radius: 30px;
-            border: none;
-            grid-template-columns: 1fr 2fr;
-            p {
-                text-align: end; 
-                padding-left: 80px; 
-                padding-right: 30px; }
-            img {
-                padding : 20px;
-                border-radius: 10px;
-                width: 400px;
-                height: 400px;
-            }
-        }
-    }
-}
-
-.qualifications {
-
+    
 }
 
 .in-the-future {

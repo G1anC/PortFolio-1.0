@@ -247,111 +247,42 @@ body main .intro-p {
     background-position: -200% center;
   }
 }
+.segment {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: red solid 1px;
+  overflow: hidden;
+}
+.segment > * {
+  border: 1px solid rgba(219, 253, 255, 0.184);
+}
+
 .hero-body {
   top: 0;
   left: 0;
   color: rgb(146, 153, 197);
   overflow-y: scroll;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
 }
 .hero-body nav {
   position: fixed;
 }
-.hero-body .where-from, .hero-body .family, .hero-body .qualifications, .hero-body .in-the-future {
-  margin-bottom: 300px;
-}
-.hero-body > *:not(.nav-wrapper, nav, .presentation, .where-from) {
-  font-size: 25px;
-  padding-right: 50px;
-  line-height: 40px;
-}
 
-.presentation {
-  width: 100%;
-}
 .presentation #intro {
   word-spacing: 3px;
   font-family: "BitMap";
   font-size: 30px;
   color: rgb(219, 253, 255);
   text-align: center;
-  padding-top: 80px;
-  padding-bottom: 30px;
 }
 
-.where-from #name {
-  font-size: 30px;
-  padding-bottom: 60px;
-  color: rgb(219, 253, 255);
-}
-.where-from #name #though {
-  padding-left: 20px;
-}
-.where-from .family > * {
-  margin-bottom: 30px;
-}
-.where-from .family .hard-workers {
-  margin: 0px 200px 80px 200px;
-  text-align: center;
-}
-.where-from .family .workers {
-  display: grid;
-  padding: 0px 20px 0px 40px;
-  line-height: 30px;
-  margin: 10px 50px 10px 30px;
-  grid-template-rows: 1fr;
-  transition: all 0.2s;
-}
-.where-from .family .workers p {
-  margin-top: 60px;
-}
-.where-from .family .workers p .white {
-  color: rgb(219, 253, 255);
-  font-size: 35px;
-}
-.where-from .family .workers img {
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
-  height: 400px;
-}
-.where-from .family .workers:hover {
-  transition: all 0.2s;
-  color: rgb(219, 253, 255);
-}
-.where-from .family .workers:hover .white {
-  animation: background-pan 3s linear infinite;
-  background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
-  background-size: 200%;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.where-from .family .mom {
-  grid-template-columns: 1.5fr 1fr;
-}
-.where-from .family .mom p {
-  margin-right: 80px;
-}
-.where-from .family .dad {
-  padding-top: 30px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border: none;
-  grid-template-columns: 1fr 2fr;
-}
-.where-from .family .dad p {
-  text-align: end;
-  padding-left: 80px;
-  padding-right: 30px;
-}
-.where-from .family .dad img {
-  padding: 20px;
-  border-radius: 10px;
-  width: 400px;
-  height: 400px;
+.workers img {
+  width: 640px;
+  height: 640px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @font-face {
