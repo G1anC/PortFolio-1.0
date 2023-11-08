@@ -4,24 +4,45 @@ $bg-color : rgb(26, 22, 21);
 body {
     scroll-behavior: smooth;
     overflow: hidden;
-    nav { .nav-wrapper { .link { &:hover { font-size: 150px; } } } }
+    nav { .nav-wrapper { .link { &:hover { font-size: 14vw; } } } }
     main {
-        top : 0;
-        left : 0;
+        background : linear-gradient(320deg ,rgba(127, 0, 255, 0.6), rgba(127, 0, 255, 0.2), $bg-color, $bg-color, rgba(0, 132, 255, 0.2), rgba(0, 132, 255, 0.6));
         height: 100vh;
         width: 100vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
         .title-wrapper {
+            padding-top: 4vw;
             height: 100%;
             width: 100%;
-            padding-top: 50px;
-            text-align: center;
-            line-height: 190px;
+            line-height: 16vw;
             #greatest {
-                font-size: 200px;
+                font-size: 17vw;
             }
         }
-        .intro-p {
-            font-size: 60px;
-        }
+        .intro-p { font-size: 5vw; }
     }
+}
+
+.big-ahh-circle {
+    background: linear-gradient(310deg ,$bg-color 15%, rgb(127, 0, 255));
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -3;
+    width: 150rem;
+    height: 150rem;
+    
+}
+#sec {
+    top: -1750px;
+    left: -1200px;
+}
+#first {
+    width: 75rem;
+    height: 75rem;
+    top: 150px;
+    left: 500px;
+    background: linear-gradient(150deg ,$bg-color 20%, rgb(0, 132, 255));
 }

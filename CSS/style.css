@@ -3,26 +3,50 @@ body {
   overflow: hidden;
 }
 body nav .nav-wrapper .link:hover {
-  font-size: 150px;
+  font-size: 14vw;
 }
 body main {
-  top: 0;
-  left: 0;
+  background: linear-gradient(320deg, rgba(127, 0, 255, 0.6), rgba(127, 0, 255, 0.2), rgb(26, 22, 21), rgb(26, 22, 21), rgba(0, 132, 255, 0.2), rgba(0, 132, 255, 0.6));
   height: 100vh;
   width: 100vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 body main .title-wrapper {
+  padding-top: 4vw;
   height: 100%;
   width: 100%;
-  padding-top: 50px;
-  text-align: center;
-  line-height: 190px;
+  line-height: 16vw;
 }
 body main .title-wrapper #greatest {
-  font-size: 200px;
+  font-size: 17vw;
 }
 body main .intro-p {
-  font-size: 60px;
+  font-size: 5vw;
+}
+
+.big-ahh-circle {
+  background: linear-gradient(310deg, rgb(26, 22, 21) 15%, rgb(127, 0, 255));
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -3;
+  width: 150rem;
+  height: 150rem;
+}
+
+#sec {
+  top: -1750px;
+  left: -1200px;
+}
+
+#first {
+  width: 75rem;
+  height: 75rem;
+  top: 150px;
+  left: 500px;
+  background: linear-gradient(150deg, rgb(26, 22, 21) 20%, rgb(0, 132, 255));
 }
 
 @keyframes background-pan {
@@ -35,10 +59,11 @@ body main .intro-p {
 }
 .contact-body {
   overflow: hidden;
+  background: linear-gradient(280deg, rgb(127, 0, 255), #1a1615 100%);
 }
 .contact-body .contact-wrapper {
   display: grid;
-  grid-template-columns: 200px 20fr;
+  grid-template-columns: 15vw 1fr;
 }
 .contact-body .contact-wrapper .medias-wrapper {
   display: flex;
@@ -59,7 +84,6 @@ body main .intro-p {
   align-items: center;
   justify-content: center;
   height: 25%;
-  padding-left: 20px;
   transition: 0.2s;
   border: none;
 }
@@ -68,15 +92,15 @@ body main .intro-p {
 }
 .contact-body .contact-wrapper .medias-wrapper .medias .gmail-button {
   display: flex;
-  width: 80px;
+  width: 8vw;
   margin-bottom: 0;
-  height: 50px;
+  height: 8vh;
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid rgba(175, 217, 219, 0.8);
   text-align: center;
   letter-spacing: 1px;
-  font-size: 25px;
+  font-size: 1.8vw;
   font-family: "BitMap";
   transition: all 0.2s;
   color: rgb(219, 253, 255);
@@ -92,8 +116,8 @@ body main .intro-p {
   border: 2px rgb(127, 0, 255) solid !important;
 }
 .contact-body .contact-wrapper .medias-wrapper .medias a img {
-  width: 50px;
-  height: 50px;
+  width: 4vw;
+  height: 4vw;
 }
 .contact-body .contact-wrapper .medias-wrapper .medias a .linkedin {
   transform: scale(1.5);
@@ -101,52 +125,55 @@ body main .intro-p {
 .contact-body .contact-wrapper .form-wrapper {
   z-index: 3;
   display: flex;
-  padding-top: 40px;
-  margin-right: 120px;
-  margin-left: 50px;
+  margin-top: 3vh;
+  margin-right: 3vh;
   height: 100vh;
   flex-direction: column;
-}
-.contact-body .contact-wrapper .form-wrapper .submit {
-  margin-bottom: 0;
-  width: 140px;
-}
-.contact-body .contact-wrapper .form-wrapper #contact-button {
-  border: none;
-  margin-left: 280px;
-  margin-right: 280px;
-  transition: all 0.2s;
-}
-.contact-body .contact-wrapper .form-wrapper #contact-button:hover {
-  animation: background-pan 5s linear infinite;
-  letter-spacing: 4px;
-  font-family: "Rosie";
-  font-size: 80px;
-  height: 40%;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: -30px;
-  border: none !important;
-  background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
-  background-size: 200%;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.contact-body .contact-wrapper .form-wrapper #contact-button:focus {
-  outline: none !important;
-  height: 60px;
-  border: none !important;
-}
-.contact-body .contact-wrapper .form-wrapper #contact-button:focus::-moz-placeholder {
-  color: transparent;
-}
-.contact-body .contact-wrapper .form-wrapper #contact-button:focus::placeholder {
-  color: transparent;
 }
 .contact-body .contact-wrapper .form-wrapper #fullname {
   border-start-start-radius: 20px;
   border-top-right-radius: 20px;
+}
+.contact-body .contact-wrapper .form-wrapper input {
+  height: 10vh;
+  margin-bottom: 7px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(135, 170, 172, 0.3);
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.8vw;
+  color: rgb(219, 253, 255);
+  font-family: "BitMap";
+  transition: all 0.2s;
+}
+.contact-body .contact-wrapper .form-wrapper input::-moz-placeholder {
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
+}
+.contact-body .contact-wrapper .form-wrapper input::placeholder {
+  color: rgb(219, 253, 255);
+  opacity: 0.3;
+}
+.contact-body .contact-wrapper .form-wrapper input:hover {
+  border: 1px solid rgb(219, 253, 255) !important;
+}
+.contact-body .contact-wrapper .form-wrapper input:hover::-moz-placeholder {
+  opacity: 1;
+}
+.contact-body .contact-wrapper .form-wrapper input:hover::placeholder {
+  opacity: 1;
+}
+.contact-body .contact-wrapper .form-wrapper input:focus {
+  outline: none !important;
+  height: 70px;
+  border: 2px rgb(127, 0, 255) solid !important;
+}
+.contact-body .contact-wrapper .form-wrapper input:focus::-moz-placeholder {
+  color: transparent;
+}
+.contact-body .contact-wrapper .form-wrapper input:focus::placeholder {
+  color: transparent;
 }
 .contact-body .contact-wrapper .form-wrapper textarea {
   background-color: transparent;
@@ -155,9 +182,10 @@ body main .intro-p {
   resize: none;
   margin-bottom: 7px;
   padding-top: 20px;
+  height: 45vh;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.8vw;
   color: rgb(219, 253, 255);
   font-family: "BitMap";
   border-end-end-radius: 20px;
@@ -193,45 +221,36 @@ body main .intro-p {
 .contact-body .contact-wrapper .form-wrapper textarea:focus::placeholder {
   color: transparent;
 }
-.contact-body .contact-wrapper .form-wrapper input {
-  height: 60px;
-  margin-bottom: 7px;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 1px solid rgba(135, 170, 172, 0.3);
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 25px;
-  color: rgb(219, 253, 255);
-  font-family: "BitMap";
+.contact-body .contact-wrapper .form-wrapper #contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 25vh;
+  width: 100%;
+  font-size: 1.8vw;
   transition: all 0.2s;
 }
-.contact-body .contact-wrapper .form-wrapper input::-moz-placeholder {
-  color: rgb(219, 253, 255);
-  opacity: 0.3;
+.contact-body .contact-wrapper .form-wrapper #contact-button:hover {
+  animation: background-pan 5s linear infinite;
+  letter-spacing: 4px;
+  font-family: "Rosie";
+  font-size: 8vw;
+  border: none !important;
+  background: linear-gradient(to right, rgb(17, 199, 245), rgb(127, 0, 255), rgb(17, 199, 245));
+  background-size: 200%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.contact-body .contact-wrapper .form-wrapper input::placeholder {
-  color: rgb(219, 253, 255);
-  opacity: 0.3;
-}
-.contact-body .contact-wrapper .form-wrapper input:hover {
-  border: 1px solid rgb(219, 253, 255) !important;
-}
-.contact-body .contact-wrapper .form-wrapper input:hover::-moz-placeholder {
-  opacity: 1;
-}
-.contact-body .contact-wrapper .form-wrapper input:hover::placeholder {
-  opacity: 1;
-}
-.contact-body .contact-wrapper .form-wrapper input:focus {
+.contact-body .contact-wrapper .form-wrapper #contact-button:focus {
   outline: none !important;
-  height: 70px;
-  border: 2px rgb(127, 0, 255) solid !important;
+  border: none !important;
 }
-.contact-body .contact-wrapper .form-wrapper input:focus::-moz-placeholder {
+.contact-body .contact-wrapper .form-wrapper #contact-button:focus::-moz-placeholder {
   color: transparent;
 }
-.contact-body .contact-wrapper .form-wrapper input:focus::placeholder {
+.contact-body .contact-wrapper .form-wrapper #contact-button:focus::placeholder {
   color: transparent;
 }
 
@@ -247,6 +266,16 @@ body main .intro-p {
     background-position: -200% center;
   }
 }
+.hero-body {
+  top: 0;
+  left: 0;
+  color: rgb(146, 153, 197);
+  overflow-y: scroll;
+}
+.hero-body nav {
+  position: fixed;
+}
+
 .segment {
   width: 100vw;
   height: 100vh;
@@ -260,17 +289,10 @@ body main .intro-p {
   border: 1px solid rgba(219, 253, 255, 0.184);
 }
 
-.hero-body {
-  top: 0;
-  left: 0;
-  color: rgb(146, 153, 197);
-  overflow-y: scroll;
+#presentation {
+  height: 50vh;
 }
-.hero-body nav {
-  position: fixed;
-}
-
-.presentation #intro {
+#presentation #intro {
   word-spacing: 3px;
   font-family: "BitMap";
   font-size: 30px;
@@ -490,15 +512,15 @@ article .rest p {
 }
 .home-body .steve {
   position: absolute;
-  left: 800px;
+  left: 65%;
   z-index: -1000;
-  top: 250px;
+  top: 40%;
   transform: scale(2);
   background-image: url("../../assets/images/STEVE.png");
-  opacity: 0.4;
+  opacity: 0.5;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 400px;
+  width: 30vw;
+  height: 40vh;
 }
 .home-body .home-text {
   position: absolute;
@@ -508,11 +530,19 @@ article .rest p {
   font-style: italic;
   line-height: 50px;
   color: rgb(146, 153, 197);
-  font-size: 35px;
+  font-size: 2.5vw;
 }
-.home-body .home-text .bigger {
+
+.bigger {
   color: rgb(219, 253, 255);
-  font-size: 45px;
+  font-size: 3.5vw;
+  font-style: italic;
+}
+
+#home-explain {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
 }
 
 @font-face {
@@ -609,15 +639,8 @@ nav .nav-wrapper {
   justify-items: center;
   align-items: center;
 }
-nav .nav-wrapper .nav-bar {
-  width: 80%;
-  height: 1px;
-  animation: background-pan 5s linear infinite;
-  background: linear-gradient(to right, #11c7f5, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #7f00ff, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), #11c7f5);
-  background-size: 200%;
-}
 nav .nav-wrapper a {
-  font-size: 70px;
+  font-size: 5vw;
   font-family: "BitMap";
   font-style: normal;
   color: #dbfdff;
@@ -629,7 +652,7 @@ nav .nav-wrapper a:hover {
   animation: background-pan 5s linear infinite;
   letter-spacing: 4px;
   font-family: "Rosie";
-  font-size: 90px;
+  font-size: 12vw;
   background: linear-gradient(to right, #11c7f5, #7f00ff, #11c7f5);
   background-size: 200%;
   -webkit-background-clip: text;
@@ -654,56 +677,4 @@ nav .nav-wrapper a:hover {
   position: absolute;
   top: 0;
   left: 50%;
-}
-
-.big-ahh-circle {
-  background: linear-gradient(310deg, #1a1615 15%, rgb(127, 0, 255));
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  z-index: -3;
-  width: 150rem;
-  height: 150rem;
-}
-
-#sec {
-  top: -1750px;
-  left: -1200px;
-}
-
-#first {
-  width: 75rem;
-  height: 75rem;
-  top: 150px;
-  left: 500px;
-  background: linear-gradient(150deg, #1a1615 20%, rgb(0, 132, 255));
-}
-
-#third {
-  background: linear-gradient(to top, #1a1615, rgb(127, 0, 255));
-  top: -1800px;
-  left: -600px;
-}
-
-#home-circle {
-  top: -200px;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 20%, #7f00ff);
-}
-
-#hero-circle {
-  top: -1000px;
-  left: -200px;
-  background: linear-gradient(to right top, #1a1615 20%, #7f00ff);
-}
-
-#hero-circle1 {
-  top: 1000px;
-  left: -1300px;
-  background: linear-gradient(to left bottom, #1a1615 20%, rgb(0, 132, 255));
-}
-
-#work-circle {
-  top: -300px;
-  left: -300px;
-  background: linear-gradient(to right bottom, #1a1615 20%, #7f00ff);
 }/*# sourceMappingURL=style.css.map */
