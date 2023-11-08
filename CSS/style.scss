@@ -15,6 +15,7 @@ $primary-font : "Space Mono", monospace;
 $bg-color : #1a1615; 
 $first-color: #dbfdff;
 $violet:#7f00ff;
+$dark-violet:rgb(47, 4, 90);
 $in-between-violet: rgb(0, 42, 255);
 $blue: #11c7f5;
 
@@ -124,16 +125,16 @@ nav {
     }
 }
 
-.explaining {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    font-size: 40px;
-    font-style: italic; 
-    width: 100vw;
-    font-family : "BitMap";
+.bigger {
+    color: rgb(219, 253, 255);
+    font-size: 3.5vw;
+    font-style: italic;
 }
-
+.explain {
+    position: absolute;
+    bottom: 4vh;
+    left: 3vw;
+}
 
 
 //______________________________________ CENTER LANDMARK ______________________________________//

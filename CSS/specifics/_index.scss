@@ -1,4 +1,5 @@
-
+$dark-blue : rgb(0, 54, 105);
+$dark-violet:rgb(59, 1, 117);
 $bg-color : rgb(26, 22, 21); 
 
 body {
@@ -6,43 +7,22 @@ body {
     overflow: hidden;
     nav { .nav-wrapper { .link { &:hover { font-size: 14vw; } } } }
     main {
-        background : linear-gradient(320deg ,rgba(127, 0, 255, 0.6), rgba(127, 0, 255, 0.2), $bg-color, $bg-color, rgba(0, 132, 255, 0.2), rgba(0, 132, 255, 0.6));
+        background : linear-gradient(320deg ,$dark-violet, $bg-color, $dark-blue);
         height: 100vh;
         width: 100vw;
         display: flex;
         text-align: center;
-        justify-content: center;
         .title-wrapper {
-            padding-top: 4vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 100%;
             width: 100%;
             line-height: 16vw;
             #greatest {
+            padding-bottom: 7vh;
                 font-size: 17vw;
             }
         }
-        .intro-p { font-size: 5vw; }
     }
-}
-
-.big-ahh-circle {
-    background: linear-gradient(310deg ,$bg-color 15%, rgb(127, 0, 255));
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    z-index: -3;
-    width: 150rem;
-    height: 150rem;
-    
-}
-#sec {
-    top: -1750px;
-    left: -1200px;
-}
-#first {
-    width: 75rem;
-    height: 75rem;
-    top: 150px;
-    left: 500px;
-    background: linear-gradient(150deg ,$bg-color 20%, rgb(0, 132, 255));
 }
