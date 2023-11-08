@@ -10,7 +10,7 @@ It is a training to frond-end and a great entry to my level as you would come ac
 
 To see how it looks like, go to ***http://G1anC.github.io/Portolio*** for now, (*https://noah-steiniger.com isn't initialized yet*).
 
-### Credits
+## Credits
 
 (The crypted hover effect was inspired by ***Hyperplexed*** on his CodePen repository ***https://codepen.io/Hyperplexed/pen/rNrJgrd*** ! Check out the code in JS/letterChanger.js, i made a few twiks to clearly encorporate the effect to my project)
 
