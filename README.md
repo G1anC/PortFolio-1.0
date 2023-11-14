@@ -1,10 +1,12 @@
  <h1 style="color:blue;">My PortFolio</h1>
 
-![image](https://github.com/G1anC/PortFolio/assets/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
-
 ***This is my personal portfolio.***
 
 It is a training to frond-end and a great entry to my level as you would come across my Github
+
+##Temmplates
+![image](https://github.com/G1anC/PortFolio/assets/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
+
 
 ## How to use it
 
