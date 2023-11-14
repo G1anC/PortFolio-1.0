@@ -26,7 +26,12 @@
                     <a href="https://www.linkedin.com/in/noah-steiniger-a08298263/"><img class="linkedin" src="../ASSETS/icons/linkedIn.webp"></a>
                     <div class="gmail-button-wrapper">
                         <input type="button" class="gmail-button" value="Gmail" onclick="
-                        copyEmailToClipBoard();                    
+                            let content = document.getElementById('text-to-copy').innerText;
+                            navigator.clipboard.writeText(content)
+                                .then(() => {console.log('Text copied to clipboard...')})
+                                .catch(err => {
+                                    console.log('Something went wrong', err);
+                                });
                     ">
                     </div>
                     
@@ -119,5 +124,6 @@
             document.addEventListener('keydown', handleEmail);
             document.getElementById("contact-button").addEventListener("click", handleEmail)
         </script>
+        <div id="text-to-copy" style="display:none;">noah.steiniger@epitech.eu</div>
 </body>
 </html>
