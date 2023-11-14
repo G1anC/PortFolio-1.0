@@ -8,7 +8,10 @@ To see how it looks like, go to ***https://G1anC.github.io*** for now, (*https:/
 
 ### Templates
 ![image](https://github.com/G1anC/PortFolio/assets/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
-
+![image]()
+![image]()
+![image]()
+![image]()
 
 ### Credits
 
