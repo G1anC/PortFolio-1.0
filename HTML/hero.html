@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>*.✧ Hero ✧.*</title>
 </head>
-
-
 <body class="hero-body">
-
-
     <nav>
         <div class="nav-wrapper">
             <a data-value="home"     class="link cript-js" href="home.html">      home</a>
@@ -21,86 +17,83 @@
     </nav>
 
 
- 
-    <div class="segment" id="presentation">  
-        <div id="intro">
-            Now that you're here, follow me straight into
-            <div class="title" style="font-size: 120px;">   my <span class="magic">personality</span></div> 
-        </div>
-
+    <div class="introo">
+        So yeah, actually, this is me !
     </div>
 
 
-
-
-    <div class="hard-workers segment">
-        My full name is actually Noah Giancarlo Steiniger Rubiero, though you can call me G1an. I come from a hard-worker and pationate family.
-    </div>
-
-    <div class="where-from">
-
-
-
-        <div class="mom workers segment">
+    <div class="segment">
+        <div class="code">
             <p>
-                <span class="white">I inherited the creative and artistic side of my mother.</span>
-                <br><br>
-                She helped me developp my artistic view of what i create,
-                enabling me to fully comprehend the importance of the visual aspect of my work, that's why i absolutely fell in love with UI.
-                <br><br>
-                To thank her for this, I've made her a portfolio to showcase her talent to her customers.
-                <br>
-                Press Enter and see the site yourself !
-            </p>
-            <img src="../assets/images/tableaubleu.jpg">
+            using namespace <span class="std">std</span>;<br>
+            <br>
+            <span class="type">class</span> <span class="name big">Me</span> {<br>
+                &emsp;&emsp;<span class="pp">private</span> :<br>
+                &emsp;&emsp;&emsp;&emsp;<span class="type">string</span> <span class="name">_Pseudo</span> = <span class="string">"Gian"</span>;<br>
+                &emsp;&emsp;&emsp;&emsp;<span class="type">string</span> <span class="name big">_Name</span> = <span class="string">"<span class="big">Noah</span> G"</span> + ((<span class="name">_Pseudo</span> != <span class="values">NULL</span>) ? <span class="string">"i" </span>: to_string(<span class="values">1</span>)) + <span class="string">"ancarlo <span class="big">Steiniger</span> Rubiero"</span>;<br>
+                &emsp;&emsp;&emsp;&emsp;<span class="type">int</span> <span class="name big">_Age</span> = <span class="values">20</span>;<br>
+                &emsp;&emsp;&emsp;&emsp;<span class="type">int</span> <span class="name">_YearsAtEpitech</span> = <span class="values">2</span>;<br>
+                &emsp;&emsp;&emsp;&emsp;<span class="type">vector</span>&lt;<span class="type">icons</span>&gt;</span> <span class="name">_Languages</span>   = <span class="values">...</span>;<br>   
+                &emsp;&emsp;&emsp;&emsp;<span class="type">vector</span>&lt;<span class="type">icons</span>&gt;</span> <span class="name">_Competences</span> = <span class="values">...</span>;<br>  
+            <br>
+            &emsp;&emsp;<span class="pp">public</span> :  <br>
+                &emsp;&emsp;&emsp;&emsp;<span class="type">void</span> <span class="function">showLanguages</span>(<span class="values">self</span>) {  <span class="std">std</span>::cout &lt;&lt; <span class="values">self</span>.<span class="name">_languages</span> &lt;&lt; <span class="std">std</span>::endl; }<br>
+                    <br>
+                    &emsp;&emsp;&emsp;&emsp;<span class="type">void</span> <span class="function">showCompetences</span>(<span class="values">self</span>) { <span class="std">std</span>::cout &lt;&lt; <span class="values">self</span>.<span class="name">_competences</span> &lt;&lt; <span class="std">std</span>::endl; }        <br> 
+            }</p>
         </div>
+    </div>
 
+    <div class="segment" id="easier-segment">
+        <button id="easier-button" onclick="
+            const easierP = document.getElementById(`text-me`);
+            (easierP.style.display === 'none' || !easierP.style.display) ?
+            easierP.style.display = 'block' :
+            easierP.style.display = 'none';
+        ">
+            Me but clearer lmao
+        </button>
+        <div id="text-me">
+            My name is Noah GianCarlo Steiniger Rubiero, i'm 20 years old and studying at EPITECH Strasbourg.
+            <br>And I... love... coding !<br>From creating little indie games, to develop heavy algorythms, or creating beautiful websites.
+            Development became my favorite hobby and i sincerely want to make it my full-time job.<br>Gaining level and experience by myself
+            or by the help of my friends. Increasing my knowledge always were a significant trait in my personality ! 
+        </div>
+    </div>
 
-
-        <div class="dad workers segment">
-            <img src="../assets/images/papaplat.jpg">
+    <div class="segment">
+        <div class="code">
             <p>
-                <span class="white">I also inherited my father's way of work.</span>
-                <br><br>
-                He is an excellent cook and i got from him the will to always find a better way to do my job, 
-                to have a perfectionnalist way of delivering quality work no matter what i do and to always search for the most appropriate and enjoyable
-                customer experience,
-                <br><br>
-                a great way to improve in UX development
-                <br>
-                if you would ask me  :&#41;
+                <span class="type">int</span> <span class="name">main</span> (<span class="type">void</span>)<br>
+                {<br>
+                    &emsp;&emsp;<span class="commentary">// creation of myself </span><br>
+                    &emsp;&emsp;<span class="type">Me</span> <span class="name big">G1an</span>;&emsp;<br><br>
+                    &emsp;&emsp;<span class="name">G1an</span>.<span class="function">showLanguages()</span>;<br>
+                    &emsp;&emsp;<span class="name">G1an</span>.<span class="function">showCompetences()</span>;<br>
+                    &emsp;&emsp;<span class="type">return</span> <span class="values">0</span>;<br>
+                }<br><br><br><br>
+                <span class="commentary">// terminal </span><br>
+                <span class="values">$--></span> make<br>
+                <span class="values">$--></span>
             </p>
-            </div>
-
-
         </div>
-
-
-
-
-
-    <div class="qualifications segment">
-
-        I started developping about 2 years ago and the more i advance, the more i get qualifications on multiple languages and applications:
-        So these are the coding-language i'm confident on (from the most to the least) :
-        C, bash, html, css, C++, JavaScript, Node.js, Haskell, ASM, php
-
-        And these are the applications i can fluidly use :
-        Git, Github, Visual Studio Code, PowerPoint, Emacs, npm, Canva
     </div>
-
-
-
-
-
-    <div class="in-the-future segment">
-        I truly have a lot to learn and i look forward to take every bit of experience i can get. My school is perfect for me and i will come out of EPITECH in 2027.
-        And so i still have 3 years to train before getting to a 100% in the professional world, although i have stages in my years of school.
+    <div class="languages-wrapper">
+        <div id="languages">
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/C.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/Cpp.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/bash.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/Css.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/HTML.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/JSS.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/haskell.png"></div>
+            <div class="language"><img style="width:70px; height:auto;" src="../ASSETS/icons/langages/C.png"></div>
+        </div>
     </div>
+    
 
-
-    <div class="big-ahh-circle" id="hero-circle"></div>
-    <div class="big-ahh-circle" id="hero-circle1"></div>
-    <script src="../JS/navTrigger.js"></script><script src="../JS/letterChanger.js"></script>
+    <script src="../js/navTrigger.js"></script>
+    <script src="../js/easierButton.js"></script>
+    <script src="../js/letterChanger.js"></script>
 </body>
 </html>

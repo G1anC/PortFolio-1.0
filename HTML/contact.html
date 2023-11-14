@@ -33,46 +33,91 @@
                 </div>
             </div>
 
-            <div class="form-wrapper" >
-
-                    <input
-                        data-value="fullname"
-                        type="text"
-                        id="fullname"
-                        placeholder="fullname"
-                        class="cript-js fullName"
-                        required
-                    >
-
-                    <input
-                        data-value="email"
-                        id="email"
-                        placeholder="email"
-                        class="cript-js email"
-                        required
-                    >
+            <form class="form-wrapper" action="https://formspree.io/f/xvojngnj" method="POST">
                     
-                    <textarea
-                        data-value="message"
-                        name="gotcha"
-                        id="message"
-                        cols="30"
-                        rows="10"
-                        placeholder="message"
-                        class="cript-js message"
-                    ></textarea>
 
-                    <input
+                    <label>
+                        <input
+                            data-value="email"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="email"
+                            class="cript-js style-inputs"
+                            required
+                        >
+                    </label>
+
+                    <label>
+                        <textarea
+                            data-value="message"
+                            name="gotcha"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="message"
+                            class="cript-js message"
+                        ></textarea>
+                    </label>
+                    
+
+                    <button
                         data-value="submit"
-                        type="button"
-                        value="submit"
-                        class="cript-js"
+                        type="submit"
+                        value="Submit"
+                        class="cript-js style-inputs"
                         id="contact-button"
-                    >
+                    >submit</button>
 
             </div>
 
         </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script><script src="../JS/navTrigger.js"></script><script src="../JS/letterChanger.js"></script><script src="../JS/handleEmail.js"></script>
+        <script src="https://smtpjs/.com/v3/smtp.js"></script>
+        <script src="../js/navTrigger.js"></script>
+        <script src="../js/letterChanger.js"></script>
+        <script>
+            const handleEmail = event => {
+    
+                let fn = document.getElementById("fullname");
+                let e = document.getElementById("email");
+                let m = document.getElementById("message");
+
+                // reset color if the value !== undefined
+                fn.style.borderColor = "rgba(135, 170, 172, 0.3)";
+                e.style.borderColor = "rgba(135, 170, 172, 0.3)";
+                m.style.borderColor = "rgba(135, 170, 172, 0.3)";
+
+                if (event.key && event.key !== "Enter") { return; }
+
+                let fnText = document.querySelector(".fullName").value;
+                if (!fnText) { fn.style.borderColor = "red"; }
+
+
+                let eText = document.querySelector(".email").value;
+                if (!eText) { e.style.borderColor = "red"; }
+                
+                let mText = document.querySelector(".message").value;
+                if (!mText) { m.style.borderColor = "red"; }
+
+
+                if (!mText || !fnText || !eText) { return; }
+
+                Email.send({
+                    Host: "smtp.gmail.com",
+                    Username: fullName,
+                    Password: "Enter your password",
+                    To: 'steinigernoah@gmail.com',
+                    From: fullName,
+                    Subject: "PORTFOLIO CONTACT FORM",
+                    Body: fullName + "\n\n" + text,
+                }).then(
+                    message => alert("mail sent successfully")  
+                );
+                m.innerText = "";
+            };
+
+            document.addEventListener('keydown', handleEmail);
+            document.getElementById("contact-button").addEventListener("click", handleEmail)
+        </script>
 </body>
 </html>

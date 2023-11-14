@@ -9,8 +9,8 @@ body main {
   background: linear-gradient(320deg, rgb(59, 1, 117), rgb(26, 22, 21), rgb(0, 54, 105));
   height: 100vh;
   width: 100vw;
-  display: flex;
   text-align: center;
+  display: flex;
 }
 body main .title-wrapper {
   display: flex;
@@ -107,93 +107,16 @@ body main .title-wrapper #greatest {
   height: 100vh;
   flex-direction: column;
 }
-.form-wrapper #fullname {
-  border-start-start-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.form-wrapper input {
-  height: 10vh;
-  margin-bottom: 7px;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 1px solid rgba(223, 223, 223, 0.279);
-  text-align: center;
-  letter-spacing: 1px;
-  color: rgb(219, 253, 255);
-  font-size: 1.8vw;
-  font-family: "BitMap";
-  transition: all 0.2s;
-}
-.form-wrapper input::-moz-placeholder {
-  color: rgba(223, 223, 223, 0.579);
-}
-.form-wrapper input::placeholder {
-  color: rgba(223, 223, 223, 0.579);
-}
-.form-wrapper input:hover {
-  border: 1px solid rgb(219, 253, 255) !important;
-}
-.form-wrapper input:hover::-moz-placeholder {
-  opacity: 1;
-}
-.form-wrapper input:hover::placeholder {
-  opacity: 1;
-}
-.form-wrapper input:focus {
-  outline: none !important;
-  height: 70px;
-  border: 2px rgb(127, 0, 255) solid !important;
-}
-.form-wrapper input:focus::-moz-placeholder {
-  color: transparent;
-}
-.form-wrapper input:focus::placeholder {
-  color: transparent;
-}
-.form-wrapper textarea {
-  background-color: transparent;
-  border-radius: 5px;
-  border: 1px solid rgba(223, 223, 223, 0.279);
-  resize: none;
-  margin-bottom: 7px;
-  padding-top: 20px;
-  height: 45vh;
-  letter-spacing: 1px;
-  text-align: center;
-  font-size: 1.8vw;
-  color: rgb(219, 253, 255);
-  font-family: "BitMap";
-  border-end-end-radius: 20px;
-  border-bottom-left-radius: 20px;
-  transition: all 0.2s;
-}
-.form-wrapper textarea::-moz-placeholder {
-  color: rgba(223, 223, 223, 0.579);
-}
-.form-wrapper textarea::placeholder {
-  color: rgba(223, 223, 223, 0.579);
-}
-.form-wrapper textarea:hover {
-  border: 1px solid rgb(219, 253, 255) !important;
-}
-.form-wrapper textarea:focus {
-  padding-left: 20px;
-  text-align: start;
-  outline: none !important;
-  border: 2px rgb(127, 0, 255) solid !important;
-}
-.form-wrapper textarea:focus::-moz-placeholder {
-  color: transparent;
-}
-.form-wrapper textarea:focus::placeholder {
-  color: transparent;
+.form-wrapper label {
+  width: 100%;
 }
 .form-wrapper #contact-button {
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-  height: 25vh;
+  height: 23vh;
+  color: white;
   width: 100%;
   font-size: 1.8vw;
   transition: all 0.2s;
@@ -221,9 +144,94 @@ body main .title-wrapper #greatest {
   color: transparent;
 }
 
-@font-face {
+.style-inputs {
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 7px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(223, 223, 223, 0.279);
+  text-align: center;
+  letter-spacing: 1px;
+  color: rgb(219, 253, 255);
+  font-size: 1.8vw;
   font-family: "BitMap";
-  src: url("../../assets/fonts/BitMap/BitMap.woff2") format("woff2");
+  transition: all 0.2s;
+}
+.style-inputs::-moz-placeholder {
+  color: rgba(223, 223, 223, 0.579);
+}
+.style-inputs::placeholder {
+  color: rgba(223, 223, 223, 0.579);
+}
+.style-inputs:hover {
+  border: 1px solid rgb(219, 253, 255) !important;
+}
+.style-inputs:hover::-moz-placeholder {
+  opacity: 1;
+}
+.style-inputs:hover::placeholder {
+  opacity: 1;
+}
+.style-inputs:focus {
+  outline: none !important;
+  height: 70px;
+  border: 2px rgb(127, 0, 255) solid !important;
+}
+.style-inputs:focus::-moz-placeholder {
+  color: transparent;
+}
+.style-inputs:focus::placeholder {
+  color: transparent;
+}
+
+#email {
+  border-start-start-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+textarea {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(223, 223, 223, 0.279);
+  resize: none;
+  margin-bottom: 7px;
+  padding-top: 20px;
+  height: 55vh;
+  width: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.8vw;
+  color: rgb(219, 253, 255);
+  font-family: "BitMap";
+  border-end-end-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all 0.2s;
+}
+textarea::-moz-placeholder {
+  color: rgba(223, 223, 223, 0.579);
+}
+textarea::placeholder {
+  color: rgba(223, 223, 223, 0.579);
+}
+textarea:hover {
+  border: 1px solid rgb(219, 253, 255) !important;
+}
+textarea:focus {
+  text-align: start;
+  outline: none !important;
+  border: 2px rgb(127, 0, 255) solid !important;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../../assets/fonts/Fira.woff2") format("woff2");
 }
 @keyframes background-pan {
   from {
@@ -236,42 +244,123 @@ body main .title-wrapper #greatest {
 .hero-body {
   top: 0;
   left: 0;
-  color: rgb(146, 153, 197);
+  height: auto;
+  background: linear-gradient(150deg, rgb(65, 2, 128), #1a1615);
+  color: rgb(194, 216, 218);
   overflow-y: scroll;
 }
 .hero-body nav {
   position: fixed;
 }
-
-.segment {
-  width: 100vw;
-  height: 100vh;
+.hero-body .introo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: red solid 1px;
-  overflow: hidden;
-}
-.segment > * {
-  border: 1px solid rgba(219, 253, 255, 0.184);
-}
-
-#presentation {
-  height: 50vh;
-}
-#presentation #intro {
-  word-spacing: 3px;
-  font-family: "BitMap";
-  font-size: 30px;
-  color: rgb(219, 253, 255);
+  height: 15vh;
+  margin-top: 30px;
+  width: 100vw;
   text-align: center;
 }
+.hero-body .segment {
+  overflow: hidden;
+  width: 100vw;
+  margin-top: 30px;
+}
+.hero-body .segment .code {
+  overflow: hidden;
+  border: 1px solid rgba(223, 223, 223, 0.279);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background-color: rgba(42, 23, 48, 0.319);
+  margin: 0px 60px;
+  padding: 15px 30px;
+}
+.hero-body .segment .code p {
+  font-family: "Fira";
+  color: rgb(194, 216, 218);
+  font-size: 1.3vw;
+}
+.hero-body .segment .code p .type {
+  color: rgb(148, 49, 202);
+}
+.hero-body .segment .code p .name {
+  color: rgb(221, 97, 245);
+}
+.hero-body .segment .code p .pp {
+  color: rgb(207, 165, 230);
+}
+.hero-body .segment .code p .string {
+  color: rgb(141, 141, 141);
+}
+.hero-body .segment .code p .std {
+  color: rgb(14, 142, 156);
+}
+.hero-body .segment .code p .values {
+  color: rgb(125, 196, 255);
+}
+.hero-body .segment .code p .function {
+  color: rgb(62, 236, 212);
+}
+.hero-body .segment .code p .commentary {
+  color: rgb(100, 100, 100);
+}
+.hero-body .segment .code .big {
+  font-weight: bold;
+}
 
-.workers img {
-  width: 640px;
-  height: 640px;
-  -o-object-fit: cover;
-     object-fit: cover;
+#easier-segment {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#easier-segment #easier-button {
+  height: 10vh;
+  background-color: transparent;
+  margin-top: 5vh;
+  width: 80%;
+  margin: 5vh 160px 5vh 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: rgba(223, 223, 223, 0.279) 1px solid;
+  color: rgb(194, 216, 218);
+  font-size: 2vw;
+  font-family: "BitMap";
+}
+#easier-segment #easier-button:hover {
+  border: 1px solid rgb(194, 216, 218);
+}
+#easier-segment #text-me {
+  display: none;
+  line-height: 35px;
+  word-spacing: 2px;
+  background-color: rgba(89, 32, 123, 0.146);
+  border-radius: 45px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  margin: 0px 7vw;
+  padding: 40px 30px 40px 30px;
+}
+
+.languages-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: rgba(223, 223, 223, 0.279) 1px solid;
+}
+.languages-wrapper #languages {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 @font-face {
@@ -352,11 +441,8 @@ article .starting-article-wrapper .article {
   display: flex;
 }
 article .starting-article-wrapper .image {
-  background-position: center;
+  background-position: initial;
   background-size: cover;
-}
-article .starting-article-wrapper:first-child > .image {
-  background-image: url("../../assets/works/42sh.png");
 }
 article .starting-article-wrapper:nth-child(2) > .image {
   background-image: url("https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
@@ -367,9 +453,17 @@ article .starting-article-wrapper:nth-child(3) > .image {
 article .starting-article-wrapper:nth-child(4) > .image {
   background-image: url("https://images.unsplash.com/photo-1660766877755-4cac24f6cf21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80");
 }
-article .starting-article-wrapper:nth-child(5) > .image {
-  background-position: initial;
-  background-image: url("../../assets/images/Gospers_glider_gun.gif");
+article .starting-article-wrapper #gol {
+  background-image: url("../../assets/works/gameolife.gif");
+}
+article .starting-article-wrapper #kab {
+  background-image: url("../../assets/works/Hannibal.jpg");
+}
+article .starting-article-wrapper #bon {
+  background-image: url("../../assets/works/bon.jpg");
+}
+article .starting-article-wrapper #sh {
+  background-image: url("../../assets/works/42sh.png");
 }
 article .starting-article-wrapper .nav {
   border-top: 1px solid rgba(219, 253, 255, 0.184);
@@ -407,7 +501,6 @@ article .starting-article-wrapper .description {
   flex-direction: column;
   justify-content: center;
   padding: 30px 50px;
-  text-align: center;
   line-height: 40px;
   border-left: 1px solid rgba(219, 253, 255, 0.184);
   color: rgb(146, 153, 197);
@@ -420,7 +513,8 @@ article .starting-article-wrapper .description p a:hover {
 }
 article .starting-article-wrapper .title-section {
   align-items: center;
-  justify-content: space-between;
+  justify-content: space;
+  text-align: start !important;
   border-top: 1px solid rgba(219, 253, 255, 0.184);
 }
 article .starting-article-wrapper .title-section .title-wrapper-work {
