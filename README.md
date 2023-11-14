@@ -8,10 +8,20 @@ To see how it looks like, go to ***https://G1anC.github.io*** for now, (*https:/
 
 ### Templates
 ![image](https://github.com/G1anC/PortFolio/assets/114910356/8ee95fa4-15da-46f3-a934-2cda6f8d1f6a)
+<br>
+
 ![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/about.png)
+<br>
+
 ![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/works.png)
+<br>
+
 ![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/home.png)
+<br>
+
 ![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/contact.png)
+<br>
+
 ![image](https://github.com/G1anC/Portfolio/blob/main/assets/images/nav.png)
 
 ### Credits
