@@ -28,13 +28,18 @@ const letterChanger = event => {
         }).join("");
     }
     else if (e.type === "button") {
-      e.value = e.value.split("").map((letter, index) => { return chooseWhichLetter(e, index, i); }).join("");
+      e.innerText = e.innerText.split("").map((letter, index) => { return chooseWhichLetter(e, index, i); }).join("");
+    } else if (e.type === "input") {
+      e.value = e.value
+      .split("")
+      .map((letter, index) => {
+        return chooseWhichLetter(e, index, i);
+      }).join("");
     }
 
     // navigation menu links
 
     else if (e.innerText) {
-      console.log(e);
       e.innerText = e.innerText
         .split("")
         .map((letter, index) => {
