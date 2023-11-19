@@ -25,7 +25,6 @@ $blue: rgb(17, 199, 245);
 
 html {
     #work-body {
-        nav { position: fixed; top:0; left: 0; }
         display:flex;
         flex-direction: column;
         height: auto;
@@ -33,7 +32,8 @@ html {
         overflow-x: hidden;
         overflow-y:hidden;
         margin: 0;
-        * { box-sizing: border-box; }
+        nav { position: fixed; top:0; left: 0; }
+        *:not(nav) { box-sizing: border-box; }
         main {
             position: relative;
             flex-grow: 1;
@@ -167,33 +167,74 @@ article {
     .rest {
         width: 100%;
         color : rgb(146, 153, 197);
-        display:grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 2fr;
+        display:block;
         font-size: 25px;
         line-height: 40px;
+        a {
+            text-decoration: none;
+            color: $white;
+        }
         & > * { border: 1px solid $border-color; margin: 0; }
-        .image { background-size: cover; }
+        .image {
+            background-size: contain;
+            height: 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
         p {
             padding: 30px 50px;
             font-size: 27px;
         }
+        .rest-grid {
+            width: 100vw;
+            height:auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
     }
-    #rest-0 { 
+    #rest-0 {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        #sh42 { background-image: url("../../ASSETS/works/shell-showcase.png"); }
         #echo-spe-var { background-image: url("../../ASSETS/works/echo-special-variables.png"); }
     }
     #rest-1 { 
         #rpg-contributions { background-image: url("../../ASSETS/works/rpg-contributions.png"); }
         #kaben { background-image: url("../../ASSETS/works/kaben.png"); }
     }
-    #rest-2 {
+    // #rest-2 {
 
-    }
-    #rest-3 {
+    // }
+    // #rest-3 {
 
-    }
-    #rest-4 {
+    // }
+    // #rest-4 {
         
+    // }
+    #rest-5 {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 0.3fr;
+        #exemple {
+            font-size: 4vw;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $details-font;
+            font-style: normal;
+            color: $first-color;
+            text-decoration: none;
+            transition: all 0.2s;
+            &:hover {
+                animation: background-pan 3s linear infinite;
+                letter-spacing: 4px;
+                font-family: $stylish-font;
+                font-size: 7vw;
+                background: linear-gradient(to right, $blue, $violet, $blue);
+                background-size: 200%;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     }
 }
   
