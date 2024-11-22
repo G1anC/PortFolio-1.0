@@ -2,6 +2,8 @@
 
 ***This is my personal portfolio.*** It is a training to frond-end and a great entry to my level as you would come across my Github.
 
+Be gentle, this was my first real web project lmao.
+
 ### How to use it
 
 To see how it looks like, go to ***https://G1anC.github.io*** for now, (*https://noah-steiniger.com isn't initialized yet*).
